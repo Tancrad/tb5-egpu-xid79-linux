@@ -1,0 +1,1507 @@
+Oct 22 20:54:20.656829 <HOSTNAME> kernel: Linux version 7.2.8-9-omarchy (linux-omarchy@omarchy) (gcc (GCC) 16.2.1 20260810, GNU ld (GNU Binutils) 2.47) #1 SMP PREEMPT_DYNAMIC Sat, 17 Oct 2026 22:09:33 +0000
+Oct 22 20:54:20.656844 <HOSTNAME> kernel: Command line: cryptdevice=UUID=<UUID>:omarchy_root root=/dev/mapper/omarchy_root zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs rtc_cmos.use_acpi_alarm=1 resume= resume_offset=36971776 systemd.tty.term.console=dumb initramfs_async=0 quiet splash loglevel=0 systemd.show_status=false rd.udev.log_level=0 vt.global_cursor_default=0 fred=on thunderbolt.host_reset=false pcie_aspm=off pcie_port_pm=off pcie_ports=native thunderbolt.clx=0
+Oct 22 20:54:20.656852 <HOSTNAME> kernel: x86/CPU: Model not found in latest microcode list
+Oct 22 20:54:20.656857 <HOSTNAME> kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks
+Oct 22 20:54:20.656861 <HOSTNAME> kernel: BIOS-provided physical RAM map:
+Oct 22 20:54:20.656865 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff]  System RAM
+Oct 22 20:54:20.656870 <HOSTNAME> kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff]  device reserved
+Oct 22 20:54:20.656874 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000641c4fff]  System RAM
+Oct 22 20:54:20.656878 <HOSTNAME> kernel: BIOS-e820: [mem 0x00000000641c5000-0x00000000641c5fff]  device reserved
+Oct 22 20:54:20.656881 <HOSTNAME> kernel: BIOS-e820: [mem 0x00000000641c6000-0x000000006437cfff]  System RAM
+Oct 22 20:54:20.656886 <HOSTNAME> kernel: BIOS-e820: [mem 0x000000006437d000-0x0000000064380fff]  device reserved
+Oct 22 20:54:20.656889 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000064381000-0x0000000064382fff]  ACPI NVS
+Oct 22 20:54:20.656893 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000064383000-0x0000000065e06fff]  System RAM
+Oct 22 20:54:20.656897 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000065e07000-0x0000000066706fff]  device reserved
+Oct 22 20:54:20.656903 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000066707000-0x00000000685eefff]  System RAM
+Oct 22 20:54:20.656907 <HOSTNAME> kernel: BIOS-e820: [mem 0x00000000685ef000-0x000000006a68efff]  device reserved
+Oct 22 20:54:20.656910 <HOSTNAME> kernel: BIOS-e820: [mem 0x000000006a68f000-0x000000006fe8efff]  ACPI NVS
+Oct 22 20:54:20.656915 <HOSTNAME> kernel: BIOS-e820: [mem 0x000000006fe8f000-0x000000006fffefff]  ACPI data
+Oct 22 20:54:20.656919 <HOSTNAME> kernel: BIOS-e820: [mem 0x000000006ffff000-0x000000006fffffff]  System RAM
+Oct 22 20:54:20.656922 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000070000000-0x00000000807fffff]  device reserved
+Oct 22 20:54:20.656926 <HOSTNAME> kernel: BIOS-e820: [gap 0x0000000080800000-0x00000000dfffffff]
+Oct 22 20:54:20.656930 <HOSTNAME> kernel: BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff]  device reserved
+Oct 22 20:54:20.656934 <HOSTNAME> kernel: BIOS-e820: [gap 0x00000000f0000000-0x00000000fed1ffff]
+Oct 22 20:54:20.656938 <HOSTNAME> kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed8ffff]  device reserved
+Oct 22 20:54:20.656942 <HOSTNAME> kernel: BIOS-e820: [gap 0x00000000fed90000-0x00000000feffffff]
+Oct 22 20:54:20.656946 <HOSTNAME> kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000001083fffff]  device reserved
+Oct 22 20:54:20.656950 <HOSTNAME> kernel: BIOS-e820: [mem 0x0000000108400000-0x000000107f7fffff]  System RAM
+Oct 22 20:54:20.656954 <HOSTNAME> kernel: NX (Execute Disable) protection: active
+Oct 22 20:54:20.656958 <HOSTNAME> kernel: APIC: Static calls initialized
+Oct 22 20:54:20.656962 <HOSTNAME> kernel: efi: EFI v2.9 by INSYDE Corp.
+Oct 22 20:54:20.656966 <HOSTNAME> kernel: efi: TPMFinalLog=0x6fde7000 ACPI=0x6fffe000 ACPI 2.0=0x6fffe014 SMBIOS=0x68dda000 MEMATTR=0x61703018 ESRT=0x61703b98 RNG=0x6ff45f18 INITRD=0x601b2f98 TPMEventLog=0x6ff3a018 
+Oct 22 20:54:20.656971 <HOSTNAME> kernel: random: crng init done
+Oct 22 20:54:20.656975 <HOSTNAME> kernel: efi: Remove mem86: MMIO range=[0xe0000000-0xefffffff] (256MB) from e820 map
+Oct 22 20:54:20.656978 <HOSTNAME> kernel: e820: remove [mem 0xe0000000-0xefffffff] device reserved
+Oct 22 20:54:20.656983 <HOSTNAME> kernel: efi: Remove mem88: MMIO range=[0xff000000-0xffffffff] (16MB) from e820 map
+Oct 22 20:54:20.656987 <HOSTNAME> kernel: e820: remove [mem 0xff000000-0xffffffff] device reserved
+Oct 22 20:54:20.656991 <HOSTNAME> kernel: secureboot: Secure boot disabled
+Oct 22 20:54:20.656995 <HOSTNAME> kernel: DMI: SMBIOS 3.8 present.
+Oct 22 20:54:20.656998 <HOSTNAME> kernel: DMI: Framework Laptop 13 Pro (Intel Core Ultra Series 3)/FRANMJCP09, BIOS 03.02 05/26/2026
+Oct 22 20:54:20.657003 <HOSTNAME> kernel: DMI: Memory slots populated: 1/1
+Oct 22 20:54:20.657009 <HOSTNAME> kernel: tsc: Detected 4000.000 MHz processor
+Oct 22 20:54:20.657013 <HOSTNAME> kernel: tsc: Detected 3993.600 MHz TSC
+Oct 22 20:54:20.657017 <HOSTNAME> kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+Oct 22 20:54:20.657022 <HOSTNAME> kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+Oct 22 20:54:20.657026 <HOSTNAME> kernel: last_pfn = 0x107f800 max_arch_pfn = 0x400000000
+Oct 22 20:54:20.657030 <HOSTNAME> kernel: MTRR map: 9 entries (3 fixed + 6 variable; max 23), built from 10 variable MTRRs
+Oct 22 20:54:20.657035 <HOSTNAME> kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 22 20:54:20.657039 <HOSTNAME> kernel: x2apic: enabled by BIOS, switching to x2apic ops
+Oct 22 20:54:20.657043 <HOSTNAME> kernel: last_pfn = 0x70000 max_arch_pfn = 0x400000000
+Oct 22 20:54:20.657047 <HOSTNAME> kernel: esrt: Reserving ESRT space from 0x0000000061703b98 to 0x0000000061703c48.
+Oct 22 20:54:20.657052 <HOSTNAME> kernel: e820: update [mem 0x61703000-0x61703fff] System RAM ==> device reserved
+Oct 22 20:54:20.657056 <HOSTNAME> kernel: Using GB pages for direct mapping
+Oct 22 20:54:20.657061 <HOSTNAME> kernel: secureboot: Secure boot disabled
+Oct 22 20:54:20.657065 <HOSTNAME> kernel: RAMDISK: [mem 0x57bec000-0x59b8dfff]
+Oct 22 20:54:20.657068 <HOSTNAME> kernel: ACPI: Early table checksum verification disabled
+Oct 22 20:54:20.657072 <HOSTNAME> kernel: ACPI: RSDP 0x000000006FFFE014 000024 (v02 INSYDE)
+Oct 22 20:54:20.657076 <HOSTNAME> kernel: ACPI: XSDT 0x000000006FF7C228 0001A4 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657080 <HOSTNAME> kernel: ACPI: FACP 0x000000006FFD9000 000114 (v06 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657084 <HOSTNAME> kernel: ACPI: DSDT 0x000000006FF8A000 03667D (v02 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657088 <HOSTNAME> kernel: ACPI: FACS 0x000000006FDC8000 000040
+Oct 22 20:54:20.657092 <HOSTNAME> kernel: ACPI: UEFI 0x000000006FDE6000 0001CF (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657097 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFFC000 000388 (v02 INSYDE Pmax_Dev 00000001 INTL 20200717)
+Oct 22 20:54:20.657101 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFFB000 0007D3 (v02 INSYDE Cpu0Ist  00003000 INTL 20200717)
+Oct 22 20:54:20.657105 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFFA000 0005F3 (v02 INSYDE Cpu0Hwp  00003000 INTL 20200717)
+Oct 22 20:54:20.657109 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFF9000 000196 (v02 INSYDE Cpu0Psd  00003000 INTL 20200717)
+Oct 22 20:54:20.657113 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFF8000 00030E (v02 INSYDE Cpu0Cst  00003001 INTL 20200717)
+Oct 22 20:54:20.657117 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFF6000 001BAF (v02 INSYDE ApIst    00003000 INTL 20200717)
+Oct 22 20:54:20.657121 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFF4000 001620 (v02 INSYDE ApHwp    00003000 INTL 20200717)
+Oct 22 20:54:20.657124 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFF2000 00163D (v02 INSYDE ApPsd    00003000 INTL 20200717)
+Oct 22 20:54:20.657129 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFF1000 000FBB (v02 INSYDE ApCst    00003000 INTL 20200717)
+Oct 22 20:54:20.657132 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFED000 003CC4 (v02 INSYDE CpuSsdt  00003000 INTL 20200717)
+Oct 22 20:54:20.657136 <HOSTNAME> kernel: ACPI: HEST 0x000000006FFEC000 000054 (v02 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657140 <HOSTNAME> kernel: ACPI: DTPR 0x000000006FFEB000 000088 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657144 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFE9000 00140E (v02 INSYDE I2Pm_Rvp 00001000 INTL 20200717)
+Oct 22 20:54:20.657148 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFE8000 000D9D (v02 INSYDE IgfxSsdt 00003000 INTL 20200717)
+Oct 22 20:54:20.657152 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFE7000 0000AD (v02 INSYDE TseSsdt  00001000 INTL 20200717)
+Oct 22 20:54:20.657156 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFDE000 008684 (v02 INSYDE TcssSsdt 00001000 INTL 20200717)
+Oct 22 20:54:20.657161 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFDC000 00077B (v02 INSYDE Tpm2Tabl 00001000 INTL 20200717)
+Oct 22 20:54:20.657164 <HOSTNAME> kernel: ACPI: TPM2 0x000000006FFFD000 00004C (v04 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657168 <HOSTNAME> kernel: ACPI: HPET 0x000000006FFD8000 000038 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657172 <HOSTNAME> kernel: ACPI: WSMT 0x000000006FFD7000 000028 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657175 <HOSTNAME> kernel: ACPI: APIC 0x000000006FFD6000 000158 (v06 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657179 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFCD000 0076C8 (v02 INSYDE PepoSsdt 00001000 INTL 20200717)
+Oct 22 20:54:20.657184 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFCB000 001447 (v02 INSYDE PDatTabl 00001000 INTL 20200717)
+Oct 22 20:54:20.657188 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFC8000 002220 (v02 INSYDE DptfTabl 00001000 INTL 20200717)
+Oct 22 20:54:20.657192 <HOSTNAME> kernel: ACPI: BERT 0x000000006FFC7000 000030 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657196 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFC6000 000907 (v02 INSYDE UpmpSsdt 00000000 INTL 20200717)
+Oct 22 20:54:20.657200 <HOSTNAME> kernel: ACPI: LPIT 0x000000006FFC5000 0000CC (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657204 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FFC4000 000D5C (v02 INSYDE PtidDevc 00001000 INTL 20200717)
+Oct 22 20:54:20.657208 <HOSTNAME> kernel: ACPI: DBGP 0x000000006FFC3000 000034 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657212 <HOSTNAME> kernel: ACPI: DBG2 0x000000006FFC2000 000054 (v00 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657216 <HOSTNAME> kernel: ACPI: NHLT 0x000000006FFC1000 00053B (v00 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657220 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF82000 0077BC (v02 INSYDE PtlH_Bep 00001000 INTL 20200717)
+Oct 22 20:54:20.657224 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF81000 000121 (v02 INSYDE FanTable 00000003 INTL 20200717)
+Oct 22 20:54:20.657229 <HOSTNAME> kernel: ACPI: _H2O 0x000000006FF80000 00002C (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657233 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF7E000 0013FC (v02 INSYDE UsbCTabl 00001000 INTL 20200717)
+Oct 22 20:54:20.657236 <HOSTNAME> kernel: ACPI: DMAR 0x000000006FF7D000 0000C0 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657240 <HOSTNAME> kernel: ACPI: FPDT 0x000000006FFDB000 000044 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657244 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF7A000 001EC7 (v02 INSYDE SocGpe   00003000 INTL 20200717)
+Oct 22 20:54:20.657249 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF78000 001DA3 (v02 INSYDE SocCmn   00003000 INTL 20200717)
+Oct 22 20:54:20.657253 <HOSTNAME> kernel: ACPI: MCFG 0x000000006FFD5000 00003C (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657257 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF6F000 008F76 (v02 INSYDE I2C_DEVT 00001000 INTL 20200717)
+Oct 22 20:54:20.657261 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF6E000 0000F8 (v02 INSYDE PcdTabl  00001000 INTL 20200717)
+Oct 22 20:54:20.657266 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF5A000 0134AD (v02 INSYDE iDNdSsdt 00001000 INTL 20200717)
+Oct 22 20:54:20.657270 <HOSTNAME> kernel: ACPI: SSDT 0x000000006FF47000 0120A1 (v02 INSYDE Cnv_Ssdt 00001000 INTL 20200717)
+Oct 22 20:54:20.657274 <HOSTNAME> kernel: ACPI: PHAT 0x000000006FFDD000 000A54 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657278 <HOSTNAME> kernel: ACPI: BGRT 0x000000006FF46000 000038 (v01 INSYDE PTL      00000002 ACPI 00040000)
+Oct 22 20:54:20.657283 <HOSTNAME> kernel: ACPI: Reserving FACP table memory at [mem 0x6ffd9000-0x6ffd9113]
+Oct 22 20:54:20.657287 <HOSTNAME> kernel: ACPI: Reserving DSDT table memory at [mem 0x6ff8a000-0x6ffc067c]
+Oct 22 20:54:20.657291 <HOSTNAME> kernel: ACPI: Reserving FACS table memory at [mem 0x6fdc8000-0x6fdc803f]
+Oct 22 20:54:20.657295 <HOSTNAME> kernel: ACPI: Reserving UEFI table memory at [mem 0x6fde6000-0x6fde61ce]
+Oct 22 20:54:20.657299 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fffc000-0x6fffc387]
+Oct 22 20:54:20.657303 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fffb000-0x6fffb7d2]
+Oct 22 20:54:20.657307 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fffa000-0x6fffa5f2]
+Oct 22 20:54:20.657311 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fff9000-0x6fff9195]
+Oct 22 20:54:20.657315 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fff8000-0x6fff830d]
+Oct 22 20:54:20.657319 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fff6000-0x6fff7bae]
+Oct 22 20:54:20.657323 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fff4000-0x6fff561f]
+Oct 22 20:54:20.657328 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fff2000-0x6fff363c]
+Oct 22 20:54:20.657331 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6fff1000-0x6fff1fba]
+Oct 22 20:54:20.657334 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffed000-0x6fff0cc3]
+Oct 22 20:54:20.657338 <HOSTNAME> kernel: ACPI: Reserving HEST table memory at [mem 0x6ffec000-0x6ffec053]
+Oct 22 20:54:20.657341 <HOSTNAME> kernel: ACPI: Reserving DTPR table memory at [mem 0x6ffeb000-0x6ffeb087]
+Oct 22 20:54:20.657344 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffe9000-0x6ffea40d]
+Oct 22 20:54:20.657348 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffe8000-0x6ffe8d9c]
+Oct 22 20:54:20.657352 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffe7000-0x6ffe70ac]
+Oct 22 20:54:20.657355 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffde000-0x6ffe6683]
+Oct 22 20:54:20.657358 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffdc000-0x6ffdc77a]
+Oct 22 20:54:20.657362 <HOSTNAME> kernel: ACPI: Reserving TPM2 table memory at [mem 0x6fffd000-0x6fffd04b]
+Oct 22 20:54:20.657366 <HOSTNAME> kernel: ACPI: Reserving HPET table memory at [mem 0x6ffd8000-0x6ffd8037]
+Oct 22 20:54:20.657369 <HOSTNAME> kernel: ACPI: Reserving WSMT table memory at [mem 0x6ffd7000-0x6ffd7027]
+Oct 22 20:54:20.657372 <HOSTNAME> kernel: ACPI: Reserving APIC table memory at [mem 0x6ffd6000-0x6ffd6157]
+Oct 22 20:54:20.657376 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffcd000-0x6ffd46c7]
+Oct 22 20:54:20.657379 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffcb000-0x6ffcc446]
+Oct 22 20:54:20.657383 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffc8000-0x6ffca21f]
+Oct 22 20:54:20.657387 <HOSTNAME> kernel: ACPI: Reserving BERT table memory at [mem 0x6ffc7000-0x6ffc702f]
+Oct 22 20:54:20.657391 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffc6000-0x6ffc6906]
+Oct 22 20:54:20.657394 <HOSTNAME> kernel: ACPI: Reserving LPIT table memory at [mem 0x6ffc5000-0x6ffc50cb]
+Oct 22 20:54:20.657397 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ffc4000-0x6ffc4d5b]
+Oct 22 20:54:20.657401 <HOSTNAME> kernel: ACPI: Reserving DBGP table memory at [mem 0x6ffc3000-0x6ffc3033]
+Oct 22 20:54:20.657404 <HOSTNAME> kernel: ACPI: Reserving DBG2 table memory at [mem 0x6ffc2000-0x6ffc2053]
+Oct 22 20:54:20.657407 <HOSTNAME> kernel: ACPI: Reserving NHLT table memory at [mem 0x6ffc1000-0x6ffc153a]
+Oct 22 20:54:20.657411 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff82000-0x6ff897bb]
+Oct 22 20:54:20.657415 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff81000-0x6ff81120]
+Oct 22 20:54:20.657419 <HOSTNAME> kernel: ACPI: Reserving _H2O table memory at [mem 0x6ff80000-0x6ff8002b]
+Oct 22 20:54:20.657422 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff7e000-0x6ff7f3fb]
+Oct 22 20:54:20.657426 <HOSTNAME> kernel: ACPI: Reserving DMAR table memory at [mem 0x6ff7d000-0x6ff7d0bf]
+Oct 22 20:54:20.657430 <HOSTNAME> kernel: ACPI: Reserving FPDT table memory at [mem 0x6ffdb000-0x6ffdb043]
+Oct 22 20:54:20.657433 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff7a000-0x6ff7bec6]
+Oct 22 20:54:20.657437 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff78000-0x6ff79da2]
+Oct 22 20:54:20.657441 <HOSTNAME> kernel: ACPI: Reserving MCFG table memory at [mem 0x6ffd5000-0x6ffd503b]
+Oct 22 20:54:20.657444 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff6f000-0x6ff77f75]
+Oct 22 20:54:20.657448 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff6e000-0x6ff6e0f7]
+Oct 22 20:54:20.657451 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff5a000-0x6ff6d4ac]
+Oct 22 20:54:20.657455 <HOSTNAME> kernel: ACPI: Reserving SSDT table memory at [mem 0x6ff47000-0x6ff590a0]
+Oct 22 20:54:20.657459 <HOSTNAME> kernel: ACPI: Reserving PHAT table memory at [mem 0x6ffdd000-0x6ffdda53]
+Oct 22 20:54:20.657462 <HOSTNAME> kernel: ACPI: Reserving BGRT table memory at [mem 0x6ff46000-0x6ff46037]
+Oct 22 20:54:20.657466 <HOSTNAME> kernel: APIC: Switched APIC routing to: cluster x2apic
+Oct 22 20:54:20.657471 <HOSTNAME> kernel: No NUMA configuration found
+Oct 22 20:54:20.657475 <HOSTNAME> kernel: Faking a node at [mem 0x0000000000000000-0x000000107f7fffff]
+Oct 22 20:54:20.657478 <HOSTNAME> kernel: NODE_DATA(0) allocated [mem 0x107f7d3f80-0x107f7fefff]
+Oct 22 20:54:20.657482 <HOSTNAME> kernel: ACPI: PM-Timer IO Port: 0x1808
+Oct 22 20:54:20.657486 <HOSTNAME> kernel: ACPI: X2APIC_NMI (uid[0xffffffff] high level lint[0x1])
+Oct 22 20:54:20.657490 <HOSTNAME> kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Oct 22 20:54:20.657494 <HOSTNAME> kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Oct 22 20:54:20.657498 <HOSTNAME> kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 22 20:54:20.657502 <HOSTNAME> kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Oct 22 20:54:20.657506 <HOSTNAME> kernel: ACPI: HPET id: 0x8086a701 base: 0xfed00000
+Oct 22 20:54:20.657510 <HOSTNAME> kernel: e820: update [mem 0x601d5000-0x60223fff] System RAM ==> device reserved
+Oct 22 20:54:20.657514 <HOSTNAME> kernel: TSC deadline timer available
+Oct 22 20:54:20.657518 <HOSTNAME> kernel: CPU topo: Max. logical packages:   1
+Oct 22 20:54:20.657522 <HOSTNAME> kernel: CPU topo: Max. logical nodes:      1
+Oct 22 20:54:20.657525 <HOSTNAME> kernel: CPU topo: Num. nodes per package:  1
+Oct 22 20:54:20.657529 <HOSTNAME> kernel: CPU topo: Max. logical dies:       1
+Oct 22 20:54:20.657533 <HOSTNAME> kernel: CPU topo: Max. dies per package:   1
+Oct 22 20:54:20.657537 <HOSTNAME> kernel: CPU topo: Max. threads per core:   1
+Oct 22 20:54:20.657540 <HOSTNAME> kernel: CPU topo: Num. cores per package:    16
+Oct 22 20:54:20.657544 <HOSTNAME> kernel: CPU topo: Num. threads per package:  16
+Oct 22 20:54:20.657549 <HOSTNAME> kernel: CPU topo: Allowing 16 present CPUs plus 0 hotplug CPUs
+Oct 22 20:54:20.657552 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 22 20:54:20.657556 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+Oct 22 20:54:20.657560 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x601d5000-0x60223fff]
+Oct 22 20:54:20.657564 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x61703000-0x61703fff]
+Oct 22 20:54:20.657568 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x641c5000-0x641c5fff]
+Oct 22 20:54:20.657572 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x6437d000-0x64382fff]
+Oct 22 20:54:20.657576 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x65e07000-0x66706fff]
+Oct 22 20:54:20.657580 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x685ef000-0x6fffefff]
+Oct 22 20:54:20.657583 <HOSTNAME> kernel: PM: hibernation: Registered nosave memory: [mem 0x70000000-0x1083fffff]
+Oct 22 20:54:20.657588 <HOSTNAME> kernel: [gap 0x80800000-0xfed1ffff] available for PCI devices
+Oct 22 20:54:20.657592 <HOSTNAME> kernel: Booting paravirtualized kernel on bare hardware
+Oct 22 20:54:20.657596 <HOSTNAME> kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Oct 22 20:54:20.657600 <HOSTNAME> kernel: Zone ranges:
+Oct 22 20:54:20.657604 <HOSTNAME> kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 22 20:54:20.657608 <HOSTNAME> kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 22 20:54:20.657612 <HOSTNAME> kernel:   Normal   [mem 0x0000000100000000-0x000000107f7fffff]
+Oct 22 20:54:20.657616 <HOSTNAME> kernel:   Device   empty
+Oct 22 20:54:20.657620 <HOSTNAME> kernel: Movable zone start for each node
+Oct 22 20:54:20.657624 <HOSTNAME> kernel: Early memory node ranges
+Oct 22 20:54:20.657629 <HOSTNAME> kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Oct 22 20:54:20.657633 <HOSTNAME> kernel:   node   0: [mem 0x0000000000100000-0x00000000641c4fff]
+Oct 22 20:54:20.657636 <HOSTNAME> kernel:   node   0: [mem 0x00000000641c6000-0x000000006437cfff]
+Oct 22 20:54:20.657640 <HOSTNAME> kernel:   node   0: [mem 0x0000000064383000-0x0000000065e06fff]
+Oct 22 20:54:20.657644 <HOSTNAME> kernel:   node   0: [mem 0x0000000066707000-0x00000000685eefff]
+Oct 22 20:54:20.657647 <HOSTNAME> kernel:   node   0: [mem 0x000000006ffff000-0x000000006fffffff]
+Oct 22 20:54:20.657651 <HOSTNAME> kernel:   node   0: [mem 0x0000000108400000-0x000000107f7fffff]
+Oct 22 20:54:20.657655 <HOSTNAME> kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000107f7fffff]
+Oct 22 20:54:20.657659 <HOSTNAME> kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Oct 22 20:54:20.657662 <HOSTNAME> kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+Oct 22 20:54:20.657667 <HOSTNAME> kernel: On node 0, zone DMA32: 1 pages in unavailable ranges
+Oct 22 20:54:20.657671 <HOSTNAME> kernel: On node 0, zone DMA32: 6 pages in unavailable ranges
+Oct 22 20:54:20.657674 <HOSTNAME> kernel: On node 0, zone DMA32: 2304 pages in unavailable ranges
+Oct 22 20:54:20.657678 <HOSTNAME> kernel: On node 0, zone DMA32: 31248 pages in unavailable ranges
+Oct 22 20:54:20.657682 <HOSTNAME> kernel: On node 0, zone Normal: 1024 pages in unavailable ranges
+Oct 22 20:54:20.657685 <HOSTNAME> kernel: On node 0, zone Normal: 2048 pages in unavailable ranges
+Oct 22 20:54:20.657689 <HOSTNAME> kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+Oct 22 20:54:20.657693 <HOSTNAME> kernel: percpu: Embedded 84 pages/cpu s221184 r8192 d114688 u524288
+Oct 22 20:54:20.657697 <HOSTNAME> kernel: pcpu-alloc: s221184 r8192 d114688 u524288 alloc=1*2097152
+Oct 22 20:54:20.657701 <HOSTNAME> kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+Oct 22 20:54:20.657705 <HOSTNAME> kernel: pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 15 
+Oct 22 20:54:20.657709 <HOSTNAME> kernel: Kernel command line: cryptdevice=UUID=<UUID>:omarchy_root root=/dev/mapper/omarchy_root zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs rtc_cmos.use_acpi_alarm=1 resume= resume_offset=36971776 systemd.tty.term.console=dumb initramfs_async=0 quiet splash loglevel=0 systemd.show_status=false rd.udev.log_level=0 vt.global_cursor_default=0 fred=on thunderbolt.host_reset=false pcie_aspm=off pcie_port_pm=off pcie_ports=native thunderbolt.clx=0
+Oct 22 20:54:20.657714 <HOSTNAME> kernel: PCIe ASPM is disabled
+Oct 22 20:54:20.657720 <HOSTNAME> kernel: Unknown kernel command line parameters "splash cryptdevice=UUID=<UUID>:omarchy_root fred=on", will be passed to user space.
+Oct 22 20:54:20.657724 <HOSTNAME> kernel: printk: log buffer data + meta data: 131072 + 557056 = 688128 bytes
+Oct 22 20:54:20.657727 <HOSTNAME> kernel: Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+Oct 22 20:54:20.657731 <HOSTNAME> kernel: Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+Oct 22 20:54:20.657736 <HOSTNAME> kernel: software IO TLB: area num 16.
+Oct 22 20:54:20.657740 <HOSTNAME> kernel: Fallback order for Node 0: 0 
+Oct 22 20:54:20.657743 <HOSTNAME> kernel: Built 1 zonelists, mobility grouping on.  Total pages: 16642183
+Oct 22 20:54:20.657747 <HOSTNAME> kernel: Policy zone: Normal
+Oct 22 20:54:20.657751 <HOSTNAME> kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Oct 22 20:54:20.657755 <HOSTNAME> kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+Oct 22 20:54:20.657759 <HOSTNAME> kernel: ftrace: allocating 56638 entries in 224 pages
+Oct 22 20:54:20.657763 <HOSTNAME> kernel: ftrace: allocated 224 pages with 3 groups
+Oct 22 20:54:20.657767 <HOSTNAME> kernel: BORE CPU Scheduler modification 7.0.0 by Masahito Suzuki
+Oct 22 20:54:20.657771 <HOSTNAME> kernel: Dynamic Preempt: full
+Oct 22 20:54:20.657775 <HOSTNAME> kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 22 20:54:20.657779 <HOSTNAME> kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+Oct 22 20:54:20.657783 <HOSTNAME> kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+Oct 22 20:54:20.657787 <HOSTNAME> kernel:         Trampoline variant of Tasks RCU enabled.
+Oct 22 20:54:20.657790 <HOSTNAME> kernel:         Rude variant of Tasks RCU enabled.
+Oct 22 20:54:20.657795 <HOSTNAME> kernel:         Tracing variant of Tasks RCU enabled.
+Oct 22 20:54:20.657799 <HOSTNAME> kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Oct 22 20:54:20.657803 <HOSTNAME> kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+Oct 22 20:54:20.657806 <HOSTNAME> kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+Oct 22 20:54:20.657811 <HOSTNAME> kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+Oct 22 20:54:20.657816 <HOSTNAME> kernel: NR_IRQS: 524544, nr_irqs: 2184, preallocated irqs: 16
+Oct 22 20:54:20.657820 <HOSTNAME> kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Oct 22 20:54:20.657823 <HOSTNAME> kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Oct 22 20:54:20.657827 <HOSTNAME> kernel: Console: colour dummy device 80x25
+Oct 22 20:54:20.657831 <HOSTNAME> kernel: printk: legacy console [tty0] enabled
+Oct 22 20:54:20.657835 <HOSTNAME> kernel: ACPI: Core revision 20260408
+Oct 22 20:54:20.657839 <HOSTNAME> kernel: hpet: HPET dysfunctional in PC10. Force disabled.
+Oct 22 20:54:20.657844 <HOSTNAME> kernel: APIC: Switch to symmetric I/O mode setup
+Oct 22 20:54:20.657848 <HOSTNAME> kernel: DMAR: Host address width 42
+Oct 22 20:54:20.657852 <HOSTNAME> kernel: DMAR: DRHD base: 0x000000fc800000 flags: 0x0
+Oct 22 20:54:20.657856 <HOSTNAME> kernel: DMAR: dmar0: reg_base_addr fc800000 ver 7:1 cap e9de008cee690402 ecap 1aca9a00f0ef5e
+Oct 22 20:54:20.657860 <HOSTNAME> kernel: DMAR: DRHD base: 0x000000fc810000 flags: 0x0
+Oct 22 20:54:20.657863 <HOSTNAME> kernel: DMAR: dmar1: reg_base_addr fc810000 ver 7:1 cap e9de008cee690402 ecap 1aca9a00f0ef5e
+Oct 22 20:54:20.657867 <HOSTNAME> kernel: DMAR: DRHD base: 0x000000fc820000 flags: 0x1
+Oct 22 20:54:20.657871 <HOSTNAME> kernel: DMAR: dmar2: reg_base_addr fc820000 ver 7:1 cap e9de008cee690402 ecap 12c89804f0efda
+Oct 22 20:54:20.657875 <HOSTNAME> kernel: DMAR: SATC flags: 0x1
+Oct 22 20:54:20.657879 <HOSTNAME> kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfc820000 IOMMU 2
+Oct 22 20:54:20.657883 <HOSTNAME> kernel: DMAR-IR: HPET id 0 under DRHD base 0xfc820000
+Oct 22 20:54:20.657887 <HOSTNAME> kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+Oct 22 20:54:20.657891 <HOSTNAME> kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode
+Oct 22 20:54:20.657895 <HOSTNAME> kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x73217d90685, max_idle_ns: 881590769617 ns
+Oct 22 20:54:20.657899 <HOSTNAME> kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 7987.20 BogoMIPS (lpj=3993600)
+Oct 22 20:54:20.657903 <HOSTNAME> kernel: CPU0: Thermal monitoring enabled (TM1)
+Oct 22 20:54:20.657907 <HOSTNAME> kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Oct 22 20:54:20.657911 <HOSTNAME> kernel: CET detected: Indirect Branch Tracking enabled
+Oct 22 20:54:20.657915 <HOSTNAME> kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Oct 22 20:54:20.657919 <HOSTNAME> kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Oct 22 20:54:20.657923 <HOSTNAME> kernel: process: using mwait in idle threads
+Oct 22 20:54:20.657927 <HOSTNAME> kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+Oct 22 20:54:20.657930 <HOSTNAME> kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Oct 22 20:54:20.657934 <HOSTNAME> kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Oct 22 20:54:20.657938 <HOSTNAME> kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 22 20:54:20.657942 <HOSTNAME> kernel: Spectre V2 : Enabling IBPB for BPF
+Oct 22 20:54:20.657946 <HOSTNAME> kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 22 20:54:20.657950 <HOSTNAME> kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 22 20:54:20.657954 <HOSTNAME> kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 22 20:54:20.657958 <HOSTNAME> kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 22 20:54:20.657962 <HOSTNAME> kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Oct 22 20:54:20.657965 <HOSTNAME> kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+Oct 22 20:54:20.657969 <HOSTNAME> kernel: x86/fpu: Supporting XSAVE feature 0x1000: 'Control-flow Kernel registers (KVM only)'
+Oct 22 20:54:20.657973 <HOSTNAME> kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 22 20:54:20.657977 <HOSTNAME> kernel: x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+Oct 22 20:54:20.657981 <HOSTNAME> kernel: x86/fpu: xstate_offset[11]:  840, xstate_sizes[11]:   16
+Oct 22 20:54:20.657985 <HOSTNAME> kernel: x86/fpu: xstate_offset[12]:  856, xstate_sizes[12]:   24
+Oct 22 20:54:20.657990 <HOSTNAME> kernel: x86/fpu: Enabled xstate features 0x1a07, context size is 880 bytes, using 'compacted' format.
+Oct 22 20:54:20.657994 <HOSTNAME> kernel: pid_max: default: 32768 minimum: 301
+Oct 22 20:54:20.657998 <HOSTNAME> kernel: landlock: Up and running.
+Oct 22 20:54:20.658001 <HOSTNAME> kernel: Yama: becoming mindful.
+Oct 22 20:54:20.658005 <HOSTNAME> kernel: LSM support for eBPF active
+Oct 22 20:54:20.658008 <HOSTNAME> kernel: Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 22 20:54:20.658012 <HOSTNAME> kernel: Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 22 20:54:20.658016 <HOSTNAME> kernel: VFS: Finished mounting rootfs on nullfs
+Oct 22 20:54:20.658020 <HOSTNAME> kernel: smpboot: CPU0: Intel(R) Core(TM) Ultra X9 388H (family: 0x6, model: 0xcc, stepping: 0x2)
+Oct 22 20:54:20.658024 <HOSTNAME> kernel: Performance Events: XSAVE Architectural LBR, Pantherlake Hybrid events, Architectural PEBS, AnyThread deprecated, 32-deep LBR, full-width counters, Intel PMU driver.
+Oct 22 20:54:20.658027 <HOSTNAME> kernel: core: The event 0x148 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658031 <HOSTNAME> kernel: core: The event 0x175 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658035 <HOSTNAME> kernel: core: The event 0x8a3 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658039 <HOSTNAME> kernel: core: The event 0xca3 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658043 <HOSTNAME> kernel: core: The event 0x10a4 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658047 <HOSTNAME> kernel: core: The event 0x1b1 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658050 <HOSTNAME> kernel: core: The event 0x1cd is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658054 <HOSTNAME> kernel: core: The event 0x10a4 is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658057 <HOSTNAME> kernel: core: The event 0x1cd is not supported as a PEBS PDIST event.
+Oct 22 20:54:20.658061 <HOSTNAME> kernel: core: cpu_core PMU driver: 
+Oct 22 20:54:20.658065 <HOSTNAME> kernel: ... version:                   6
+Oct 22 20:54:20.658068 <HOSTNAME> kernel: ... bit width:                 48
+Oct 22 20:54:20.658072 <HOSTNAME> kernel: ... generic counters:          10
+Oct 22 20:54:20.658076 <HOSTNAME> kernel: ... generic bitmap:            00000000000003ff
+Oct 22 20:54:20.658079 <HOSTNAME> kernel: ... fixed-purpose counters:    4
+Oct 22 20:54:20.658083 <HOSTNAME> kernel: ... fixed-purpose bitmap:      000000000000000f
+Oct 22 20:54:20.658086 <HOSTNAME> kernel: ... value mask:                0000ffffffffffff
+Oct 22 20:54:20.658090 <HOSTNAME> kernel: ... max period:                00007fffffffffff
+Oct 22 20:54:20.658093 <HOSTNAME> kernel: ... global_ctrl mask:          0001000f000003ff
+Oct 22 20:54:20.658097 <HOSTNAME> kernel: signal: max sigframe size: 3632
+Oct 22 20:54:20.658101 <HOSTNAME> kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1228
+Oct 22 20:54:20.658105 <HOSTNAME> kernel: rcu: Hierarchical SRCU implementation.
+Oct 22 20:54:20.658108 <HOSTNAME> kernel: rcu:         Max phase no-delay instances is 400.
+Oct 22 20:54:20.658112 <HOSTNAME> kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Oct 22 20:54:20.658116 <HOSTNAME> kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Oct 22 20:54:20.658119 <HOSTNAME> kernel: smp: Bringing up secondary CPUs ...
+Oct 22 20:54:20.658123 <HOSTNAME> kernel: smpboot: x86: Booting SMP configuration:
+Oct 22 20:54:20.658127 <HOSTNAME> kernel: .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+Oct 22 20:54:20.658130 <HOSTNAME> kernel: core: cpu_atom PMU driver: 
+Oct 22 20:54:20.658134 <HOSTNAME> kernel: ... version:                   6
+Oct 22 20:54:20.658138 <HOSTNAME> kernel: ... bit width:                 48
+Oct 22 20:54:20.658141 <HOSTNAME> kernel: ... generic counters:          8
+Oct 22 20:54:20.658145 <HOSTNAME> kernel: ... generic bitmap:            00000000000000ff
+Oct 22 20:54:20.658148 <HOSTNAME> kernel: ... fixed-purpose counters:    6
+Oct 22 20:54:20.658152 <HOSTNAME> kernel: ... fixed-purpose bitmap:      0000000000000077
+Oct 22 20:54:20.658156 <HOSTNAME> kernel: ... value mask:                0000ffffffffffff
+Oct 22 20:54:20.658160 <HOSTNAME> kernel: ... max period:                00007fffffffffff
+Oct 22 20:54:20.658163 <HOSTNAME> kernel: ... global_ctrl mask:          00000077000000ff
+Oct 22 20:54:20.658166 <HOSTNAME> kernel: smp: Brought up 1 node, 16 CPUs
+Oct 22 20:54:20.658170 <HOSTNAME> kernel: smpboot: Total of 16 processors activated (127795.20 BogoMIPS)
+Oct 22 20:54:20.658174 <HOSTNAME> kernel: Memory: 65109292K/66568732K available (27063K kernel code, 4273K rwdata, 17564K rodata, 5268K init, 5196K bss, 1424872K reserved, 0K cma-reserved)
+Oct 22 20:54:20.658178 <HOSTNAME> kernel: devtmpfs: initialized
+Oct 22 20:54:20.658181 <HOSTNAME> kernel: x86/mm: Memory block size: 2048MB
+Oct 22 20:54:20.658184 <HOSTNAME> kernel: ACPI: PM: Registering ACPI NVS region [mem 0x64381000-0x64382fff] (8192 bytes)
+Oct 22 20:54:20.658188 <HOSTNAME> kernel: ACPI: PM: Registering ACPI NVS region [mem 0x6a68f000-0x6fe8efff] (92274688 bytes)
+Oct 22 20:54:20.658192 <HOSTNAME> kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Oct 22 20:54:20.658195 <HOSTNAME> kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+Oct 22 20:54:20.658200 <HOSTNAME> kernel: xor: automatically using best checksumming function   avx       
+Oct 22 20:54:20.658203 <HOSTNAME> kernel: PM: RTC time: 00:53:51, date: 2026-10-23
+Oct 22 20:54:20.658207 <HOSTNAME> kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 22 20:54:20.658211 <HOSTNAME> kernel: DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+Oct 22 20:54:20.658214 <HOSTNAME> kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 22 20:54:20.658218 <HOSTNAME> kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 22 20:54:20.658225 <HOSTNAME> kernel: audit: initializing netlink subsys (disabled)
+Oct 22 20:54:20.658229 <HOSTNAME> kernel: audit: type=2000 audit(1792716831.016:1): state=initialized audit_enabled=0 res=1
+Oct 22 20:54:20.658233 <HOSTNAME> kernel: thermal_sys: Registered thermal governor 'fair_share'
+Oct 22 20:54:20.658236 <HOSTNAME> kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Oct 22 20:54:20.658240 <HOSTNAME> kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 22 20:54:20.658243 <HOSTNAME> kernel: thermal_sys: Registered thermal governor 'user_space'
+Oct 22 20:54:20.658247 <HOSTNAME> kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 22 20:54:20.658250 <HOSTNAME> kernel: cpuidle: using governor ladder
+Oct 22 20:54:20.658254 <HOSTNAME> kernel: cpuidle: using governor menu
+Oct 22 20:54:20.658258 <HOSTNAME> kernel: Freeing SMP alternatives memory: 72K
+Oct 22 20:54:20.658261 <HOSTNAME> kernel: efi: Freeing EFI boot services memory: 110872K
+Oct 22 20:54:20.658265 <HOSTNAME> kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 22 20:54:20.658268 <HOSTNAME> kernel: PCI: ECAM [mem 0xe0000000-0xea9fffff] (base 0xe0000000) for domain 0000 [bus 00-a9]
+Oct 22 20:54:20.658272 <HOSTNAME> kernel: PCI: Using configuration type 1 for base access
+Oct 22 20:54:20.658276 <HOSTNAME> kernel: virt/tdx: TDX not supported by the host platform
+Oct 22 20:54:20.658280 <HOSTNAME> kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Oct 22 20:54:20.658284 <HOSTNAME> kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 22 20:54:20.658288 <HOSTNAME> kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+Oct 22 20:54:20.658291 <HOSTNAME> kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 22 20:54:20.658295 <HOSTNAME> kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Oct 22 20:54:20.658298 <HOSTNAME> kernel: raid6: using avx2x2 recovery algorithm
+Oct 22 20:54:20.658302 <HOSTNAME> kernel: raid6: skipped pq benchmark and selected avx2x4
+Oct 22 20:54:20.658306 <HOSTNAME> kernel: ACPI: Added _OSI(Module Device)
+Oct 22 20:54:20.658309 <HOSTNAME> kernel: ACPI: Added _OSI(Processor Device)
+Oct 22 20:54:20.658313 <HOSTNAME> kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 22 20:54:20.658316 <HOSTNAME> kernel: ACPI: 30 ACPI AML tables successfully acquired and loaded
+Oct 22 20:54:20.658320 <HOSTNAME> kernel: ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+Oct 22 20:54:20.658324 <HOSTNAME> kernel: ACPI: \_SB_: platform _OSC: OS control mask [006e7eff]
+Oct 22 20:54:20.658328 <HOSTNAME> kernel: ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+
+Oct 22 20:54:20.658331 <HOSTNAME> kernel: ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+
+Oct 22 20:54:20.658335 <HOSTNAME> kernel: ACPI: EC: EC started
+Oct 22 20:54:20.658339 <HOSTNAME> kernel: ACPI: EC: interrupt blocked
+Oct 22 20:54:20.658342 <HOSTNAME> kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Oct 22 20:54:20.658346 <HOSTNAME> kernel: ACPI: \_SB_.PC00.LPCB.EC0_: Boot DSDT EC used to handle transactions
+Oct 22 20:54:20.658350 <HOSTNAME> kernel: ACPI: Interpreter enabled
+Oct 22 20:54:20.658356 <HOSTNAME> kernel: ACPI: PM: (supports S0 S4 S5)
+Oct 22 20:54:20.658359 <HOSTNAME> kernel: ACPI: Using IOAPIC for interrupt routing
+Oct 22 20:54:20.658363 <HOSTNAME> kernel: HEST: Table parsing has been initialized.
+Oct 22 20:54:20.658366 <HOSTNAME> kernel: GHES: APEI firmware first mode is enabled by APEI bit.
+Oct 22 20:54:20.658370 <HOSTNAME> kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 22 20:54:20.658374 <HOSTNAME> kernel: PCI: Ignoring E820 reservations for host bridge windows
+Oct 22 20:54:20.658378 <HOSTNAME> kernel: ACPI: Enabled 8 GPEs in block 00 to 7F
+Oct 22 20:54:20.658381 <HOSTNAME> kernel: ACPI: Enabled 15 GPEs in block 80 to DF
+Oct 22 20:54:20.658385 <HOSTNAME> kernel: ACPI: \_SB_.PC00.CNVW.WRST: New power resource
+Oct 22 20:54:20.658388 <HOSTNAME> kernel: ACPI: \_SB_.PC00.BTPC.WRST: New power resource
+Oct 22 20:54:20.658392 <HOSTNAME> kernel: ACPI: \_SB_.PC00.RP09.PXP_: New power resource
+Oct 22 20:54:20.658396 <HOSTNAME> kernel: ACPI: \_SB_.PC00.TBT0: New power resource
+Oct 22 20:54:20.658399 <HOSTNAME> kernel: ACPI: \_SB_.PC00.TBT1: New power resource
+Oct 22 20:54:20.658404 <HOSTNAME> kernel: ACPI: \_SB_.PC00.D3C_: New power resource
+Oct 22 20:54:20.658407 <HOSTNAME> kernel: ACPI: \_SB_.FN10: New power resource
+Oct 22 20:54:20.658411 <HOSTNAME> kernel: ACPI: \PIN_: New power resource
+Oct 22 20:54:20.658414 <HOSTNAME> kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-a9])
+Oct 22 20:54:20.658502 <HOSTNAME> kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig Segments MSI EDR HPX-Type3]
+Oct 22 20:54:20.658553 <HOSTNAME> kernel: acpi PNP0A08:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Oct 22 20:54:20.658558 <HOSTNAME> kernel: PCI host bridge to bus 0000:00
+Oct 22 20:54:20.658604 <HOSTNAME> kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 22 20:54:20.658646 <HOSTNAME> kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 22 20:54:20.658685 <HOSTNAME> kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 22 20:54:20.658726 <HOSTNAME> kernel: pci_bus 0000:00: root bus resource [mem 0x80800000-0xdfffffff window]
+Oct 22 20:54:20.658766 <HOSTNAME> kernel: pci_bus 0000:00: root bus resource [mem 0x8000000000-0x3ffffffffff window]
+Oct 22 20:54:20.658802 <HOSTNAME> kernel: pci_bus 0000:00: root bus resource [bus 00-a9]
+Oct 22 20:54:20.658852 <HOSTNAME> kernel: pci 0000:00:00.0: [8086:b001] type 00 class 0x060000 conventional PCI endpoint
+Oct 22 20:54:20.658901 <HOSTNAME> kernel: pci 0000:00:02.0: [8086:b082] type 00 class 0x030000 PCIe Root Complex Integrated Endpoint
+Oct 22 20:54:20.658947 <HOSTNAME> kernel: pci 0000:00:02.0: BAR 0 [mem 0xe032000000-0xe032ffffff 64bit pref]
+Oct 22 20:54:20.658993 <HOSTNAME> kernel: pci 0000:00:02.0: BAR 2 [mem 0x8000000000-0x800fffffff 64bit pref]
+Oct 22 20:54:20.659036 <HOSTNAME> kernel: pci 0000:00:02.0: ROM [mem 0xffe00000-0xffffffff pref]
+Oct 22 20:54:20.659081 <HOSTNAME> kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Oct 22 20:54:20.659125 <HOSTNAME> kernel: pci 0000:00:02.0: VF BAR 0 [mem 0x00000000-0x00ffffff 64bit pref]
+Oct 22 20:54:20.659173 <HOSTNAME> kernel: pci 0000:00:02.0: VF BAR 0 [mem 0x00000000-0x06ffffff 64bit pref]: contains BAR 0 for 7 VFs
+Oct 22 20:54:20.659220 <HOSTNAME> kernel: pci 0000:00:04.0: [8086:b01d] type 00 class 0x118000 conventional PCI endpoint
+Oct 22 20:54:20.659265 <HOSTNAME> kernel: pci 0000:00:04.0: BAR 0 [mem 0xe033300000-0xe03331ffff 64bit]
+Oct 22 20:54:20.659314 <HOSTNAME> kernel: pci 0000:00:06.0: [8086:e461] type 01 class 0x060400 PCIe Root Port
+Oct 22 20:54:20.659359 <HOSTNAME> kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+Oct 22 20:54:20.659406 <HOSTNAME> kernel: pci 0000:00:06.0:   bridge window [mem 0xa8200000-0xa82fffff]
+Oct 22 20:54:20.659450 <HOSTNAME> kernel: pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.659498 <HOSTNAME> kernel: pci 0000:00:07.0: [8086:e44e] type 01 class 0x060400 PCIe Root Port
+Oct 22 20:54:20.659543 <HOSTNAME> kernel: pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+Oct 22 20:54:20.659589 <HOSTNAME> kernel: pci 0000:00:07.0:   bridge window [mem 0xa0000000-0xa7ffffff]
+Oct 22 20:54:20.659633 <HOSTNAME> kernel: pci 0000:00:07.0:   bridge window [mem 0x8010000000-0x980fffffff 64bit pref]
+Oct 22 20:54:20.659677 <HOSTNAME> kernel: pci 0000:00:07.0: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.659733 <HOSTNAME> kernel: pci 0000:00:07.1: [8086:e44f] type 01 class 0x060400 PCIe Root Port
+Oct 22 20:54:20.659781 <HOSTNAME> kernel: pci 0000:00:07.1: PCI bridge to [bus 2c-55]
+Oct 22 20:54:20.659828 <HOSTNAME> kernel: pci 0000:00:07.1:   bridge window [io  0x3000-0x3fff]
+Oct 22 20:54:20.659874 <HOSTNAME> kernel: pci 0000:00:07.1:   bridge window [mem 0x94000000-0x9fffffff]
+Oct 22 20:54:20.659921 <HOSTNAME> kernel: pci 0000:00:07.1:   bridge window [mem 0x9810000000-0xb02fffffff 64bit pref]
+Oct 22 20:54:20.659969 <HOSTNAME> kernel: pci 0000:00:07.1: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.660017 <HOSTNAME> kernel: pci 0000:00:07.2: [8086:e460] type 01 class 0x060400 PCIe Root Port
+Oct 22 20:54:20.660062 <HOSTNAME> kernel: pci 0000:00:07.2: PCI bridge to [bus 56-7f]
+Oct 22 20:54:20.660104 <HOSTNAME> kernel: pci 0000:00:07.2:   bridge window [mem 0x8c000000-0x93ffffff]
+Oct 22 20:54:20.660145 <HOSTNAME> kernel: pci 0000:00:07.2:   bridge window [mem 0xb030000000-0xc82fffffff 64bit pref]
+Oct 22 20:54:20.660186 <HOSTNAME> kernel: pci 0000:00:07.2: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.660240 <HOSTNAME> kernel: pci 0000:00:07.3: [8086:e437] type 01 class 0x060400 PCIe Root Port
+Oct 22 20:54:20.660291 <HOSTNAME> kernel: pci 0000:00:07.3: PCI bridge to [bus 80-a9]
+Oct 22 20:54:20.660337 <HOSTNAME> kernel: pci 0000:00:07.3:   bridge window [mem 0x84000000-0x8bffffff]
+Oct 22 20:54:20.660386 <HOSTNAME> kernel: pci 0000:00:07.3:   bridge window [mem 0xc830000000-0xe02fffffff 64bit pref]
+Oct 22 20:54:20.660432 <HOSTNAME> kernel: pci 0000:00:07.3: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.660486 <HOSTNAME> kernel: pci 0000:00:0a.0: [8086:b07d] type 00 class 0x118000 PCIe Root Complex Integrated Endpoint
+Oct 22 20:54:20.660537 <HOSTNAME> kernel: pci 0000:00:0a.0: BAR 0 [mem 0xe033330000-0xe03333ffff 64bit]
+Oct 22 20:54:20.660582 <HOSTNAME> kernel: pci 0000:00:0a.0: enabling Extended Tags
+Oct 22 20:54:20.660635 <HOSTNAME> kernel: pci 0000:00:0b.0: [8086:b03e] type 00 class 0x120000 PCIe Root Complex Integrated Endpoint
+Oct 22 20:54:20.660684 <HOSTNAME> kernel: pci 0000:00:0b.0: BAR 0 [mem 0xe030000000-0xe031ffffff 64bit]
+Oct 22 20:54:20.660733 <HOSTNAME> kernel: pci 0000:00:0b.0: BAR 4 [mem 0xe03335d000-0xe03335dfff 64bit]
+Oct 22 20:54:20.660787 <HOSTNAME> kernel: pci 0000:00:0d.0: [8086:e431] type 00 class 0x0c0330 conventional PCI endpoint
+Oct 22 20:54:20.660842 <HOSTNAME> kernel: pci 0000:00:0d.0: BAR 0 [mem 0xe033320000-0xe03332ffff 64bit]
+Oct 22 20:54:20.660897 <HOSTNAME> kernel: pci 0000:00:0d.0: PME# supported from D3hot D3cold
+Oct 22 20:54:20.660962 <HOSTNAME> kernel: pci 0000:00:0d.2: [8086:e433] type 00 class 0x0c0340 conventional PCI endpoint
+Oct 22 20:54:20.661013 <HOSTNAME> kernel: pci 0000:00:0d.2: BAR 0 [mem 0xe0332c0000-0xe0332fffff 64bit]
+Oct 22 20:54:20.661069 <HOSTNAME> kernel: pci 0000:00:0d.2: BAR 2 [mem 0xe03335c000-0xe03335cfff 64bit]
+Oct 22 20:54:20.661121 <HOSTNAME> kernel: pci 0000:00:0d.2: supports D1 D2
+Oct 22 20:54:20.661175 <HOSTNAME> kernel: pci 0000:00:0d.2: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.661229 <HOSTNAME> kernel: pci 0000:00:0d.3: [8086:e434] type 00 class 0x0c0340 conventional PCI endpoint
+Oct 22 20:54:20.661279 <HOSTNAME> kernel: pci 0000:00:0d.3: BAR 0 [mem 0xe033280000-0xe0332bffff 64bit]
+Oct 22 20:54:20.661327 <HOSTNAME> kernel: pci 0000:00:0d.3: BAR 2 [mem 0xe03335b000-0xe03335bfff 64bit]
+Oct 22 20:54:20.661376 <HOSTNAME> kernel: pci 0000:00:0d.3: supports D1 D2
+Oct 22 20:54:20.661423 <HOSTNAME> kernel: pci 0000:00:0d.3: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.661474 <HOSTNAME> kernel: pci 0000:00:13.0: [8086:e462] type 00 class 0x078000 conventional PCI endpoint
+Oct 22 20:54:20.661519 <HOSTNAME> kernel: pci 0000:00:13.0: BAR 0 [mem 0xe03335a000-0xe03335afff 64bit]
+Oct 22 20:54:20.661565 <HOSTNAME> kernel: pci 0000:00:13.0: PME# supported from D3hot
+Oct 22 20:54:20.661621 <HOSTNAME> kernel: pci 0000:00:14.0: [8086:e47d] type 00 class 0x0c0330 conventional PCI endpoint
+Oct 22 20:54:20.661669 <HOSTNAME> kernel: pci 0000:00:14.0: BAR 0 [mem 0xa8300000-0xa830ffff 64bit]
+Oct 22 20:54:20.661724 <HOSTNAME> kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+Oct 22 20:54:20.661773 <HOSTNAME> kernel: pci 0000:00:14.2: [8086:e47f] type 00 class 0x050000 conventional PCI endpoint
+Oct 22 20:54:20.661820 <HOSTNAME> kernel: pci 0000:00:14.2: BAR 0 [mem 0xe033340000-0xe033347fff 64bit]
+Oct 22 20:54:20.661865 <HOSTNAME> kernel: pci 0000:00:14.2: BAR 2 [mem 0xe033359000-0xe033359fff 64bit]
+Oct 22 20:54:20.661908 <HOSTNAME> kernel: pci 0000:00:14.3: [8086:e440] type 00 class 0x028000 PCIe Root Complex Integrated Endpoint
+Oct 22 20:54:20.661956 <HOSTNAME> kernel: pci 0000:00:14.3: BAR 0 [mem 0xe03334c000-0xe03334ffff 64bit]
+Oct 22 20:54:20.662000 <HOSTNAME> kernel: pci 0000:00:14.3: enabling Extended Tags
+Oct 22 20:54:20.662041 <HOSTNAME> kernel: pci 0000:00:14.3: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.662096 <HOSTNAME> kernel: pci 0000:00:14.7: [8086:e476] type 00 class 0x0d1100 PCIe Root Complex Integrated Endpoint
+Oct 22 20:54:20.662133 <HOSTNAME> kernel: pci 0000:00:14.7: BAR 0 [mem 0xe033348000-0xe03334bfff 64bit]
+Oct 22 20:54:20.662174 <HOSTNAME> kernel: pci 0000:00:14.7: enabling Extended Tags
+Oct 22 20:54:20.662211 <HOSTNAME> kernel: pci 0000:00:14.7: PME# supported from D0 D3hot D3cold
+Oct 22 20:54:20.662255 <HOSTNAME> kernel: pci 0000:00:15.0: [8086:e478] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.662297 <HOSTNAME> kernel: pci 0000:00:15.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Oct 22 20:54:20.662341 <HOSTNAME> kernel: pci 0000:00:15.1: [8086:e479] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.662381 <HOSTNAME> kernel: pci 0000:00:15.1: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Oct 22 20:54:20.662421 <HOSTNAME> kernel: pci 0000:00:15.2: [8086:e47a] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.662462 <HOSTNAME> kernel: pci 0000:00:15.2: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Oct 22 20:54:20.662504 <HOSTNAME> kernel: pci 0000:00:15.3: [8086:e47b] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.662544 <HOSTNAME> kernel: pci 0000:00:15.3: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Oct 22 20:54:20.662583 <HOSTNAME> kernel: pci 0000:00:16.0: [8086:e470] type 00 class 0x078000 conventional PCI endpoint
+Oct 22 20:54:20.662624 <HOSTNAME> kernel: pci 0000:00:16.0: BAR 0 [mem 0xe033354000-0xe033354fff 64bit]
+Oct 22 20:54:20.662663 <HOSTNAME> kernel: pci 0000:00:16.0: PME# supported from D3hot
+Oct 22 20:54:20.662703 <HOSTNAME> kernel: pci 0000:00:18.0: [8086:e45d] type 00 class 0x078000 conventional PCI endpoint
+Oct 22 20:54:20.662745 <HOSTNAME> kernel: pci 0000:00:18.0: BAR 0 [mem 0xe033353000-0xe033353fff 64bit]
+Oct 22 20:54:20.662781 <HOSTNAME> kernel: pci 0000:00:18.0: PME# supported from D3hot
+Oct 22 20:54:20.662828 <HOSTNAME> kernel: pci 0000:00:19.0: [8086:e450] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.662872 <HOSTNAME> kernel: pci 0000:00:19.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Oct 22 20:54:20.662924 <HOSTNAME> kernel: pci 0000:00:19.1: [8086:e451] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.662969 <HOSTNAME> kernel: pci 0000:00:19.1: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Oct 22 20:54:20.663016 <HOSTNAME> kernel: pci 0000:00:1f.0: [8086:e402] type 00 class 0x060100 conventional PCI endpoint
+Oct 22 20:54:20.663062 <HOSTNAME> kernel: pci 0000:00:1f.3: [8086:e428] type 00 class 0x040380 conventional PCI endpoint
+Oct 22 20:54:20.663106 <HOSTNAME> kernel: pci 0000:00:1f.3: BAR 0 [mem 0xe033200000-0xe03327ffff 64bit]
+Oct 22 20:54:20.663151 <HOSTNAME> kernel: pci 0000:00:1f.3: BAR 4 [mem 0xe033000000-0xe0331fffff 64bit]
+Oct 22 20:54:20.663193 <HOSTNAME> kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+Oct 22 20:54:20.663237 <HOSTNAME> kernel: pci 0000:00:1f.4: [8086:e422] type 00 class 0x0c0500 conventional PCI endpoint
+Oct 22 20:54:20.663274 <HOSTNAME> kernel: pci 0000:00:1f.4: BAR 0 [mem 0xe033350000-0xe0333500ff 64bit]
+Oct 22 20:54:20.663314 <HOSTNAME> kernel: pci 0000:00:1f.4: BAR 4 [io  0xefa0-0xefbf]
+Oct 22 20:54:20.663355 <HOSTNAME> kernel: pci 0000:00:1f.5: [8086:e423] type 00 class 0x0c8000 conventional PCI endpoint
+Oct 22 20:54:20.663395 <HOSTNAME> kernel: pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]
+Oct 22 20:54:20.663442 <HOSTNAME> kernel: pci 0000:01:00.0: [15b7:5030] type 00 class 0x010802 PCIe Endpoint
+Oct 22 20:54:20.663487 <HOSTNAME> kernel: pci 0000:01:00.0: BAR 0 [mem 0xa8200000-0xa8203fff 64bit]
+Oct 22 20:54:20.663527 <HOSTNAME> kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+Oct 22 20:54:20.663566 <HOSTNAME> kernel: pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+Oct 22 20:54:20.663610 <HOSTNAME> kernel: pci 0000:2c:00.0: [8086:5786] type 01 class 0x060400 PCIe Switch Upstream Port
+Oct 22 20:54:20.663653 <HOSTNAME> kernel: pci 0000:2c:00.0: PCI bridge to [bus 2d-55]
+Oct 22 20:54:20.663696 <HOSTNAME> kernel: pci 0000:2c:00.0:   bridge window [io  0x3000-0x3fff]
+Oct 22 20:54:20.663740 <HOSTNAME> kernel: pci 0000:2c:00.0:   bridge window [mem 0x94000000-0x9fefffff]
+Oct 22 20:54:20.663783 <HOSTNAME> kernel: pci 0000:2c:00.0:   bridge window [mem 0x9810000000-0xb021ffffff 64bit pref]
+Oct 22 20:54:20.663826 <HOSTNAME> kernel: pci 0000:2c:00.0: enabling Extended Tags
+Oct 22 20:54:20.663871 <HOSTNAME> kernel: pci 0000:2c:00.0: supports D1 D2
+Oct 22 20:54:20.663916 <HOSTNAME> kernel: pci 0000:2c:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.663958 <HOSTNAME> kernel: pci 0000:00:07.1: PCI bridge to [bus 2c-55]
+Oct 22 20:54:20.664004 <HOSTNAME> kernel: pci 0000:2d:00.0: [8086:5786] type 01 class 0x060400 PCIe Switch Downstream Port
+Oct 22 20:54:20.664050 <HOSTNAME> kernel: pci 0000:2d:00.0: PCI bridge to [bus 2e]
+Oct 22 20:54:20.664094 <HOSTNAME> kernel: pci 0000:2d:00.0:   bridge window [io  0x3000-0x3fff]
+Oct 22 20:54:20.664136 <HOSTNAME> kernel: pci 0000:2d:00.0:   bridge window [mem 0x94000000-0x980fffff]
+Oct 22 20:54:20.664181 <HOSTNAME> kernel: pci 0000:2d:00.0:   bridge window [mem 0x9810000000-0x9821ffffff 64bit pref]
+Oct 22 20:54:20.664226 <HOSTNAME> kernel: pci 0000:2d:00.0: enabling Extended Tags
+Oct 22 20:54:20.664273 <HOSTNAME> kernel: pci 0000:2d:00.0: supports D1 D2
+Oct 22 20:54:20.664317 <HOSTNAME> kernel: pci 0000:2d:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.664361 <HOSTNAME> kernel: pci 0000:2d:01.0: [8086:5786] type 01 class 0x060400 PCIe Switch Downstream Port
+Oct 22 20:54:20.664405 <HOSTNAME> kernel: pci 0000:2d:01.0: PCI bridge to [bus 2f-3b]
+Oct 22 20:54:20.664450 <HOSTNAME> kernel: pci 0000:2d:01.0:   bridge window [mem 0x9d500000-0x9fefffff]
+Oct 22 20:54:20.664493 <HOSTNAME> kernel: pci 0000:2d:01.0:   bridge window [mem 0xa822000000-0xb021ffffff 64bit pref]
+Oct 22 20:54:20.664538 <HOSTNAME> kernel: pci 0000:2d:01.0: enabling Extended Tags
+Oct 22 20:54:20.664584 <HOSTNAME> kernel: pci 0000:2d:01.0: supports D1 D2
+Oct 22 20:54:20.664628 <HOSTNAME> kernel: pci 0000:2d:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.664677 <HOSTNAME> kernel: pci 0000:2d:02.0: [8086:5786] type 01 class 0x060400 PCIe Switch Downstream Port
+Oct 22 20:54:20.664730 <HOSTNAME> kernel: pci 0000:2d:02.0: PCI bridge to [bus 3c-48]
+Oct 22 20:54:20.664775 <HOSTNAME> kernel: pci 0000:2d:02.0:   bridge window [mem 0x9ab00000-0x9d4fffff]
+Oct 22 20:54:20.664821 <HOSTNAME> kernel: pci 0000:2d:02.0:   bridge window [mem 0xa022000000-0xa821ffffff 64bit pref]
+Oct 22 20:54:20.664869 <HOSTNAME> kernel: pci 0000:2d:02.0: enabling Extended Tags
+Oct 22 20:54:20.664915 <HOSTNAME> kernel: pci 0000:2d:02.0: supports D1 D2
+Oct 22 20:54:20.664961 <HOSTNAME> kernel: pci 0000:2d:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.665006 <HOSTNAME> kernel: pci 0000:2d:03.0: [8086:5786] type 01 class 0x060400 PCIe Switch Downstream Port
+Oct 22 20:54:20.665054 <HOSTNAME> kernel: pci 0000:2d:03.0: PCI bridge to [bus 49-55]
+Oct 22 20:54:20.665103 <HOSTNAME> kernel: pci 0000:2d:03.0:   bridge window [mem 0x98100000-0x9aafffff]
+Oct 22 20:54:20.665153 <HOSTNAME> kernel: pci 0000:2d:03.0:   bridge window [mem 0x9822000000-0xa021ffffff 64bit pref]
+Oct 22 20:54:20.665208 <HOSTNAME> kernel: pci 0000:2d:03.0: enabling Extended Tags
+Oct 22 20:54:20.665257 <HOSTNAME> kernel: pci 0000:2d:03.0: supports D1 D2
+Oct 22 20:54:20.665306 <HOSTNAME> kernel: pci 0000:2d:03.0: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 20:54:20.665354 <HOSTNAME> kernel: pci 0000:2c:00.0: PCI bridge to [bus 2d-55]
+Oct 22 20:54:20.665411 <HOSTNAME> kernel: pci 0000:2e:00.0: [10de:2c05] type 00 class 0x030000 PCIe Legacy Endpoint
+Oct 22 20:54:20.665461 <HOSTNAME> kernel: pci 0000:2e:00.0: BAR 0 [mem 0x94000000-0x97ffffff]
+Oct 22 20:54:20.665510 <HOSTNAME> kernel: pci 0000:2e:00.0: BAR 1 [mem 0x9810000000-0x981fffffff 64bit pref]
+Oct 22 20:54:20.665561 <HOSTNAME> kernel: pci 0000:2e:00.0: BAR 3 [mem 0x9820000000-0x9821ffffff 64bit pref]
+Oct 22 20:54:20.665610 <HOSTNAME> kernel: pci 0000:2e:00.0: BAR 5 [io  0x3000-0x307f]
+Oct 22 20:54:20.665659 <HOSTNAME> kernel: pci 0000:2e:00.0: ROM [mem 0xfff80000-0xffffffff pref]
+Oct 22 20:54:20.665705 <HOSTNAME> kernel: pci 0000:2e:00.0: Enabling HDA controller
+Oct 22 20:54:20.665766 <HOSTNAME> kernel: pci 0000:2e:00.0: PME# supported from D0 D3hot
+Oct 22 20:54:20.665819 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]
+Oct 22 20:54:20.665875 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff 64bit pref]: contains BAR 0 for 1 VFs
+Oct 22 20:54:20.665927 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]
+Oct 22 20:54:20.665984 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 2 [mem 0x00000000-0x0fffffff 64bit pref]: contains BAR 2 for 1 VFs
+Oct 22 20:54:20.666036 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]
+Oct 22 20:54:20.666086 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 4 [mem 0x00000000-0x01ffffff 64bit pref]: contains BAR 4 for 1 VFs
+Oct 22 20:54:20.666136 <HOSTNAME> kernel: pci 0000:2e:00.0: 8.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x4 link at 0000:00:07.1 (capable of 504.112 Gb/s with 32.0 GT/s PCIe x16 link)
+Oct 22 20:54:20.666187 <HOSTNAME> kernel: pci 0000:2e:00.1: [10de:22e9] type 00 class 0x040300 PCIe Endpoint
+Oct 22 20:54:20.666237 <HOSTNAME> kernel: pci 0000:2e:00.1: BAR 0 [mem 0x98000000-0x98003fff]
+Oct 22 20:54:20.666286 <HOSTNAME> kernel: pci 0000:2d:00.0: PCI bridge to [bus 2e]
+Oct 22 20:54:20.666337 <HOSTNAME> kernel: pci 0000:2d:01.0: PCI bridge to [bus 2f-3b]
+Oct 22 20:54:20.666385 <HOSTNAME> kernel: pci 0000:2d:02.0: PCI bridge to [bus 3c-48]
+Oct 22 20:54:20.666431 <HOSTNAME> kernel: pci 0000:2d:03.0: PCI bridge to [bus 49-55]
+Oct 22 20:54:20.666473 <HOSTNAME> kernel: pci 0000:00:07.2: PCI bridge to [bus 56-7f]
+Oct 22 20:54:20.666514 <HOSTNAME> kernel: pci 0000:00:07.3: PCI bridge to [bus 80-a9]
+Oct 22 20:54:20.666519 <HOSTNAME> kernel: ACPI: \_SB_.PEPD: Duplicate LPS0 _DSM functions (mask: 0x1)
+Oct 22 20:54:20.666522 <HOSTNAME> kernel: Low-power S0 idle used by default for system suspend
+Oct 22 20:54:20.666526 <HOSTNAME> kernel: ACPI: EC: interrupt unblocked
+Oct 22 20:54:20.666529 <HOSTNAME> kernel: ACPI: EC: event unblocked
+Oct 22 20:54:20.666533 <HOSTNAME> kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Oct 22 20:54:20.666536 <HOSTNAME> kernel: ACPI: EC: GPE=0x6e
+Oct 22 20:54:20.666543 <HOSTNAME> kernel: ACPI: \_SB_.PC00.LPCB.EC0_: Boot DSDT EC initialization complete
+Oct 22 20:54:20.666547 <HOSTNAME> kernel: ACPI: \_SB_.PC00.LPCB.EC0_: EC: Used to handle transactions and events
+Oct 22 20:54:20.666551 <HOSTNAME> kernel: iommu: Default domain type: Translated
+Oct 22 20:54:20.666554 <HOSTNAME> kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Oct 22 20:54:20.666557 <HOSTNAME> kernel: SCSI subsystem initialized
+Oct 22 20:54:20.666561 <HOSTNAME> kernel: libata version 3.00 loaded.
+Oct 22 20:54:20.666564 <HOSTNAME> kernel: ACPI: bus type USB registered
+Oct 22 20:54:20.666568 <HOSTNAME> kernel: usbcore: registered new interface driver usbfs
+Oct 22 20:54:20.666571 <HOSTNAME> kernel: usbcore: registered new interface driver hub
+Oct 22 20:54:20.666574 <HOSTNAME> kernel: usbcore: registered new device driver usb
+Oct 22 20:54:20.666577 <HOSTNAME> kernel: EDAC MC: Ver: 3.0.0
+Oct 22 20:54:20.666581 <HOSTNAME> kernel: efivars: Registered efivars operations
+Oct 22 20:54:20.666585 <HOSTNAME> kernel: NetLabel: Initializing
+Oct 22 20:54:20.666588 <HOSTNAME> kernel: NetLabel:  domain hash size = 128
+Oct 22 20:54:20.666591 <HOSTNAME> kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 22 20:54:20.666594 <HOSTNAME> kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 22 20:54:20.666597 <HOSTNAME> kernel: mctp: management component transport protocol core
+Oct 22 20:54:20.666600 <HOSTNAME> kernel: NET: Registered PF_MCTP protocol family
+Oct 22 20:54:20.666603 <HOSTNAME> kernel: PCI: Using ACPI for IRQ routing
+Oct 22 20:54:20.666607 <HOSTNAME> kernel: PCI: pci_cache_line_size set to 64 bytes
+Oct 22 20:54:20.666649 <HOSTNAME> kernel: pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]: can't claim; no compatible bridge window
+Oct 22 20:54:20.666653 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x0009f000-0x0009ffff]
+Oct 22 20:54:20.666657 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x601d5000-0x63ffffff]
+Oct 22 20:54:20.666661 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x61703000-0x63ffffff]
+Oct 22 20:54:20.666664 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x641c5000-0x67ffffff]
+Oct 22 20:54:20.666668 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x6437d000-0x67ffffff]
+Oct 22 20:54:20.666671 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x65e07000-0x67ffffff]
+Oct 22 20:54:20.666674 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x685ef000-0x6bffffff]
+Oct 22 20:54:20.666678 <HOSTNAME> kernel: e820: register RAM buffer resource [mem 0x107f800000-0x107fffffff]
+Oct 22 20:54:20.666720 <HOSTNAME> kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Oct 22 20:54:20.666761 <HOSTNAME> kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Oct 22 20:54:20.666801 <HOSTNAME> kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Oct 22 20:54:20.666854 <HOSTNAME> kernel: pci 0000:2e:00.0: vgaarb: bridge control possible
+Oct 22 20:54:20.666906 <HOSTNAME> kernel: pci 0000:2e:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+Oct 22 20:54:20.666910 <HOSTNAME> kernel: vgaarb: loaded
+Oct 22 20:54:20.666915 <HOSTNAME> kernel: clocksource: Switched to clocksource tsc-early
+Oct 22 20:54:20.666919 <HOSTNAME> kernel: VFS: Disk quotas dquot_6.6.0
+Oct 22 20:54:20.666923 <HOSTNAME> kernel: VFS: Dquot-cache hash table entries: 512 (4096 bytes)
+Oct 22 20:54:20.666980 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0061]
+Oct 22 20:54:20.667030 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0063]
+Oct 22 20:54:20.667078 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0065]
+Oct 22 20:54:20.667122 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0067]
+Oct 22 20:54:20.667166 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0070]
+Oct 22 20:54:20.667209 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0080]
+Oct 22 20:54:20.667251 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x0092]
+Oct 22 20:54:20.667292 <HOSTNAME> kernel: acpi PNP0C02:00: Skipped [io  0x00b2-0x00b3]
+Oct 22 20:54:20.667331 <HOSTNAME> kernel: acpi PNP0C02:00: Reserved [io  0x0680-0x069f]
+Oct 22 20:54:20.667373 <HOSTNAME> kernel: acpi PNP0C02:00: Reserved [io  0x164e-0x164f]
+Oct 22 20:54:20.667417 <HOSTNAME> kernel: acpi PNP0C02:03: Reserved [mem 0xfedc0000-0xfedc7fff]
+Oct 22 20:54:20.667461 <HOSTNAME> kernel: acpi PNP0C02:03: Reserved [mem 0xfa000000-0xfa000fff]
+Oct 22 20:54:20.667503 <HOSTNAME> kernel: acpi PNP0C02:03: Could not reserve [mem 0x00000000-0x00000fff]
+Oct 22 20:54:20.667543 <HOSTNAME> kernel: acpi PNP0C02:03: Reserved [mem 0xe0000000-0xefffffff]
+Oct 22 20:54:20.667583 <HOSTNAME> kernel: acpi PNP0C02:03: Could not reserve [mem 0xfed20000-0xfed7ffff]
+Oct 22 20:54:20.667623 <HOSTNAME> kernel: acpi PNP0C02:03: Could not reserve [mem 0xfc800000-0xfc81ffff]
+Oct 22 20:54:20.667664 <HOSTNAME> kernel: acpi PNP0C02:03: Reserved [mem 0xfed45000-0xfed8ffff]
+Oct 22 20:54:20.667705 <HOSTNAME> kernel: acpi PNP0C02:03: Reserved [mem 0xfee00000-0xfeefffff]
+Oct 22 20:54:20.667748 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0xfe000000-0xfe01ffff]
+Oct 22 20:54:20.667788 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0xfe04c000-0xfe04ffff]
+Oct 22 20:54:20.667832 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0xfe050000-0xfe0affff]
+Oct 22 20:54:20.667877 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0xfe0d0000-0xfe0fffff]
+Oct 22 20:54:20.667921 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0xfe200000-0xfe7fffff]
+Oct 22 20:54:20.667966 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0xff000000-0xffffffff]
+Oct 22 20:54:20.668011 <HOSTNAME> kernel: acpi PNP0C02:04: Could not reserve [io  0x1800-0x18fe]
+Oct 22 20:54:20.668055 <HOSTNAME> kernel: acpi PNP0C02:04: Reserved [mem 0x4000000000-0x400058ffff]
+Oct 22 20:54:20.668103 <HOSTNAME> kernel: acpi PNP0C02:05: Reserved [io  0x2000-0x20fe]
+Oct 22 20:54:20.668107 <HOSTNAME> kernel: pnp: PnP ACPI init
+Oct 22 20:54:20.668112 <HOSTNAME> kernel: pnp: PnP ACPI: found 2 devices
+Oct 22 20:54:20.668116 <HOSTNAME> kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 22 20:54:20.668120 <HOSTNAME> kernel: NET: Registered PF_INET protocol family
+Oct 22 20:54:20.668124 <HOSTNAME> kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct 22 20:54:20.668128 <HOSTNAME> kernel: tcp_listen_portaddr_hash hash table entries: 32768 (order: 7, 524288 bytes, linear)
+Oct 22 20:54:20.668132 <HOSTNAME> kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 22 20:54:20.668136 <HOSTNAME> kernel: TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Oct 22 20:54:20.668140 <HOSTNAME> kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Oct 22 20:54:20.668144 <HOSTNAME> kernel: TCP: Hash tables configured (established 524288 bind 65536)
+Oct 22 20:54:20.668149 <HOSTNAME> kernel: MPTCP token hash table entries: 65536 (order: 9, 1572864 bytes, linear)
+Oct 22 20:54:20.668153 <HOSTNAME> kernel: UDP hash table entries: 32768 (order: 9, 2097152 bytes, linear)
+Oct 22 20:54:20.668157 <HOSTNAME> kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 22 20:54:20.668160 <HOSTNAME> kernel: NET: Registered PF_XDP protocol family
+Oct 22 20:54:20.668209 <HOSTNAME> kernel: pci 0000:2e:00.0: ROM [mem 0xfff80000-0xffffffff pref]: can't claim; no compatible bridge window
+Oct 22 20:54:20.668252 <HOSTNAME> kernel: pci 0000:00:07.0: bridge window [io  0x1000-0x0fff] to [bus 02-2b] add_size 1000
+Oct 22 20:54:20.668298 <HOSTNAME> kernel: pci 0000:2d:01.0: bridge window [io  0x1000-0x0fff] to [bus 2f-3b] add_size 1000
+Oct 22 20:54:20.668343 <HOSTNAME> kernel: pci 0000:2d:02.0: bridge window [io  0x1000-0x0fff] to [bus 3c-48] add_size 1000
+Oct 22 20:54:20.668388 <HOSTNAME> kernel: pci 0000:2d:03.0: bridge window [io  0x1000-0x0fff] to [bus 49-55] add_size 1000
+Oct 22 20:54:20.668430 <HOSTNAME> kernel: pci 0000:00:07.2: bridge window [io  0x1000-0x0fff] to [bus 56-7f] add_size 1000
+Oct 22 20:54:20.668470 <HOSTNAME> kernel: pci 0000:00:07.3: bridge window [io  0x1000-0x0fff] to [bus 80-a9] add_size 1000
+Oct 22 20:54:20.668511 <HOSTNAME> kernel: pci 0000:00:02.0: VF BAR 0 [mem 0xe034000000-0xe03affffff 64bit pref]: assigned
+Oct 22 20:54:20.668552 <HOSTNAME> kernel: pci 0000:00:07.0: bridge window [io  0x4000-0x4fff]: assigned
+Oct 22 20:54:20.668592 <HOSTNAME> kernel: pci 0000:00:07.2: bridge window [io  0x5000-0x5fff]: assigned
+Oct 22 20:54:20.668631 <HOSTNAME> kernel: pci 0000:00:07.3: bridge window [io  0x6000-0x6fff]: assigned
+Oct 22 20:54:20.668670 <HOSTNAME> kernel: pci 0000:00:15.0: BAR 0 [mem 0xe033351000-0xe033351fff 64bit]: assigned
+Oct 22 20:54:20.668712 <HOSTNAME> kernel: pci 0000:00:15.1: BAR 0 [mem 0xe033352000-0xe033352fff 64bit]: assigned
+Oct 22 20:54:20.668753 <HOSTNAME> kernel: pci 0000:00:15.2: BAR 0 [mem 0xe033355000-0xe033355fff 64bit]: assigned
+Oct 22 20:54:20.668794 <HOSTNAME> kernel: pci 0000:00:15.3: BAR 0 [mem 0xe033356000-0xe033356fff 64bit]: assigned
+Oct 22 20:54:20.668837 <HOSTNAME> kernel: pci 0000:00:19.0: BAR 0 [mem 0xe033357000-0xe033357fff 64bit]: assigned
+Oct 22 20:54:20.668880 <HOSTNAME> kernel: pci 0000:00:19.1: BAR 0 [mem 0xe033358000-0xe033358fff 64bit]: assigned
+Oct 22 20:54:20.668921 <HOSTNAME> kernel: pci 0000:00:1f.5: BAR 0 [mem 0x80800000-0x80800fff]: assigned
+Oct 22 20:54:20.668962 <HOSTNAME> kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+Oct 22 20:54:20.669005 <HOSTNAME> kernel: pci 0000:00:06.0:   bridge window [mem 0xa8200000-0xa82fffff]
+Oct 22 20:54:20.669049 <HOSTNAME> kernel: pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+Oct 22 20:54:20.669090 <HOSTNAME> kernel: pci 0000:00:07.0:   bridge window [io  0x4000-0x4fff]
+Oct 22 20:54:20.669130 <HOSTNAME> kernel: pci 0000:00:07.0:   bridge window [mem 0xa0000000-0xa7ffffff]
+Oct 22 20:54:20.669168 <HOSTNAME> kernel: pci 0000:00:07.0:   bridge window [mem 0x8010000000-0x980fffffff 64bit pref]
+Oct 22 20:54:20.669211 <HOSTNAME> kernel: pci 0000:2d:01.0: bridge window [io  size 0x1000]: can't assign; no space
+Oct 22 20:54:20.669255 <HOSTNAME> kernel: pci 0000:2d:01.0: bridge window [io  size 0x1000]: failed to assign
+Oct 22 20:54:20.669299 <HOSTNAME> kernel: pci 0000:2d:02.0: bridge window [io  size 0x1000]: can't assign; no space
+Oct 22 20:54:20.669342 <HOSTNAME> kernel: pci 0000:2d:02.0: bridge window [io  size 0x1000]: failed to assign
+Oct 22 20:54:20.669386 <HOSTNAME> kernel: pci 0000:2d:03.0: bridge window [io  size 0x1000]: can't assign; no space
+Oct 22 20:54:20.669429 <HOSTNAME> kernel: pci 0000:2d:03.0: bridge window [io  size 0x1000]: failed to assign
+Oct 22 20:54:20.669473 <HOSTNAME> kernel: pci 0000:2d:03.0: bridge window [io  size 0x1000]: can't assign; no space
+Oct 22 20:54:20.669520 <HOSTNAME> kernel: pci 0000:2d:03.0: bridge window [io  size 0x1000]: failed to assign
+Oct 22 20:54:20.669565 <HOSTNAME> kernel: pci 0000:2d:02.0: bridge window [io  size 0x1000]: can't assign; no space
+Oct 22 20:54:20.669610 <HOSTNAME> kernel: pci 0000:2d:02.0: bridge window [io  size 0x1000]: failed to assign
+Oct 22 20:54:20.669652 <HOSTNAME> kernel: pci 0000:2d:01.0: bridge window [io  size 0x1000]: can't assign; no space
+Oct 22 20:54:20.669694 <HOSTNAME> kernel: pci 0000:2d:01.0: bridge window [io  size 0x1000]: failed to assign
+Oct 22 20:54:20.669747 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: can't assign; no space
+Oct 22 20:54:20.669792 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 2 [mem size 0x10000000 64bit pref]: failed to assign
+Oct 22 20:54:20.669842 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: can't assign; no space
+Oct 22 20:54:20.669891 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 4 [mem size 0x02000000 64bit pref]: failed to assign
+Oct 22 20:54:20.669941 <HOSTNAME> kernel: pci 0000:2e:00.0: ROM [mem 0x98080000-0x980fffff pref]: assigned
+Oct 22 20:54:20.669993 <HOSTNAME> kernel: pci 0000:2e:00.0: VF BAR 0 [mem 0x98040000-0x9807ffff 64bit pref]: assigned
+Oct 22 20:54:20.670043 <HOSTNAME> kernel: pci 0000:2d:00.0: PCI bridge to [bus 2e]
+Oct 22 20:54:20.670092 <HOSTNAME> kernel: pci 0000:2d:00.0:   bridge window [io  0x3000-0x3fff]
+Oct 22 20:54:20.670141 <HOSTNAME> kernel: pci 0000:2d:00.0:   bridge window [mem 0x94000000-0x980fffff]
+Oct 22 20:54:20.670188 <HOSTNAME> kernel: pci 0000:2d:00.0:   bridge window [mem 0x9810000000-0x9821ffffff 64bit pref]
+Oct 22 20:54:20.670234 <HOSTNAME> kernel: pci 0000:2d:01.0: PCI bridge to [bus 2f-3b]
+Oct 22 20:54:20.670280 <HOSTNAME> kernel: pci 0000:2d:01.0:   bridge window [mem 0x9d500000-0x9fefffff]
+Oct 22 20:54:20.670329 <HOSTNAME> kernel: pci 0000:2d:01.0:   bridge window [mem 0xa822000000-0xb021ffffff 64bit pref]
+Oct 22 20:54:20.670378 <HOSTNAME> kernel: pci 0000:2d:02.0: PCI bridge to [bus 3c-48]
+Oct 22 20:54:20.670430 <HOSTNAME> kernel: pci 0000:2d:02.0:   bridge window [mem 0x9ab00000-0x9d4fffff]
+Oct 22 20:54:20.670480 <HOSTNAME> kernel: pci 0000:2d:02.0:   bridge window [mem 0xa022000000-0xa821ffffff 64bit pref]
+Oct 22 20:54:20.670534 <HOSTNAME> kernel: pci 0000:2d:03.0: PCI bridge to [bus 49-55]
+Oct 22 20:54:20.670586 <HOSTNAME> kernel: pci 0000:2d:03.0:   bridge window [mem 0x98100000-0x9aafffff]
+Oct 22 20:54:20.670638 <HOSTNAME> kernel: pci 0000:2d:03.0:   bridge window [mem 0x9822000000-0xa021ffffff 64bit pref]
+Oct 22 20:54:20.670687 <HOSTNAME> kernel: pci 0000:2c:00.0: PCI bridge to [bus 2d-55]
+Oct 22 20:54:20.670740 <HOSTNAME> kernel: pci 0000:2c:00.0:   bridge window [io  0x3000-0x3fff]
+Oct 22 20:54:20.670788 <HOSTNAME> kernel: pci 0000:2c:00.0:   bridge window [mem 0x94000000-0x9fefffff]
+Oct 22 20:54:20.670839 <HOSTNAME> kernel: pci 0000:2c:00.0:   bridge window [mem 0x9810000000-0xb021ffffff 64bit pref]
+Oct 22 20:54:20.670890 <HOSTNAME> kernel: pci 0000:00:07.1: PCI bridge to [bus 2c-55]
+Oct 22 20:54:20.670941 <HOSTNAME> kernel: pci 0000:00:07.1:   bridge window [io  0x3000-0x3fff]
+Oct 22 20:54:20.670990 <HOSTNAME> kernel: pci 0000:00:07.1:   bridge window [mem 0x94000000-0x9fffffff]
+Oct 22 20:54:20.671039 <HOSTNAME> kernel: pci 0000:00:07.1:   bridge window [mem 0x9810000000-0xb02fffffff 64bit pref]
+Oct 22 20:54:20.671085 <HOSTNAME> kernel: pci 0000:00:07.2: PCI bridge to [bus 56-7f]
+Oct 22 20:54:20.671125 <HOSTNAME> kernel: pci 0000:00:07.2:   bridge window [io  0x5000-0x5fff]
+Oct 22 20:54:20.671164 <HOSTNAME> kernel: pci 0000:00:07.2:   bridge window [mem 0x8c000000-0x93ffffff]
+Oct 22 20:54:20.671207 <HOSTNAME> kernel: pci 0000:00:07.2:   bridge window [mem 0xb030000000-0xc82fffffff 64bit pref]
+Oct 22 20:54:20.671249 <HOSTNAME> kernel: pci 0000:00:07.3: PCI bridge to [bus 80-a9]
+Oct 22 20:54:20.671294 <HOSTNAME> kernel: pci 0000:00:07.3:   bridge window [io  0x6000-0x6fff]
+Oct 22 20:54:20.671338 <HOSTNAME> kernel: pci 0000:00:07.3:   bridge window [mem 0x84000000-0x8bffffff]
+Oct 22 20:54:20.671382 <HOSTNAME> kernel: pci 0000:00:07.3:   bridge window [mem 0xc830000000-0xe02fffffff 64bit pref]
+Oct 22 20:54:20.671425 <HOSTNAME> kernel: pci_bus 0000:00: Some PCI device resources are unassigned, try booting with pci=realloc
+Oct 22 20:54:20.671469 <HOSTNAME> kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 22 20:54:20.671512 <HOSTNAME> kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 22 20:54:20.671550 <HOSTNAME> kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 22 20:54:20.671589 <HOSTNAME> kernel: pci_bus 0000:00: resource 7 [mem 0x80800000-0xdfffffff window]
+Oct 22 20:54:20.671632 <HOSTNAME> kernel: pci_bus 0000:00: resource 8 [mem 0x8000000000-0x3ffffffffff window]
+Oct 22 20:54:20.671678 <HOSTNAME> kernel: pci_bus 0000:01: resource 1 [mem 0xa8200000-0xa82fffff]
+Oct 22 20:54:20.671730 <HOSTNAME> kernel: pci_bus 0000:02: resource 0 [io  0x4000-0x4fff]
+Oct 22 20:54:20.671779 <HOSTNAME> kernel: pci_bus 0000:02: resource 1 [mem 0xa0000000-0xa7ffffff]
+Oct 22 20:54:20.671825 <HOSTNAME> kernel: pci_bus 0000:02: resource 2 [mem 0x8010000000-0x980fffffff 64bit pref]
+Oct 22 20:54:20.671873 <HOSTNAME> kernel: pci_bus 0000:2c: resource 0 [io  0x3000-0x3fff]
+Oct 22 20:54:20.671921 <HOSTNAME> kernel: pci_bus 0000:2c: resource 1 [mem 0x94000000-0x9fffffff]
+Oct 22 20:54:20.671966 <HOSTNAME> kernel: pci_bus 0000:2c: resource 2 [mem 0x9810000000-0xb02fffffff 64bit pref]
+Oct 22 20:54:20.672016 <HOSTNAME> kernel: pci_bus 0000:2d: resource 0 [io  0x3000-0x3fff]
+Oct 22 20:54:20.672064 <HOSTNAME> kernel: pci_bus 0000:2d: resource 1 [mem 0x94000000-0x9fefffff]
+Oct 22 20:54:20.672111 <HOSTNAME> kernel: pci_bus 0000:2d: resource 2 [mem 0x9810000000-0xb021ffffff 64bit pref]
+Oct 22 20:54:20.672165 <HOSTNAME> kernel: pci_bus 0000:2e: resource 0 [io  0x3000-0x3fff]
+Oct 22 20:54:20.672214 <HOSTNAME> kernel: pci_bus 0000:2e: resource 1 [mem 0x94000000-0x980fffff]
+Oct 22 20:54:20.672260 <HOSTNAME> kernel: pci_bus 0000:2e: resource 2 [mem 0x9810000000-0x9821ffffff 64bit pref]
+Oct 22 20:54:20.672306 <HOSTNAME> kernel: pci_bus 0000:2f: resource 0 [io  size 0x1000]
+Oct 22 20:54:20.672353 <HOSTNAME> kernel: pci_bus 0000:2f: resource 1 [mem 0x9d500000-0x9fefffff]
+Oct 22 20:54:20.672401 <HOSTNAME> kernel: pci_bus 0000:2f: resource 2 [mem 0xa822000000-0xb021ffffff 64bit pref]
+Oct 22 20:54:20.672450 <HOSTNAME> kernel: pci_bus 0000:3c: resource 0 [io  size 0x1000]
+Oct 22 20:54:20.672497 <HOSTNAME> kernel: pci_bus 0000:3c: resource 1 [mem 0x9ab00000-0x9d4fffff]
+Oct 22 20:54:20.672544 <HOSTNAME> kernel: pci_bus 0000:3c: resource 2 [mem 0xa022000000-0xa821ffffff 64bit pref]
+Oct 22 20:54:20.672596 <HOSTNAME> kernel: pci_bus 0000:49: resource 0 [io  size 0x1000]
+Oct 22 20:54:20.672643 <HOSTNAME> kernel: pci_bus 0000:49: resource 1 [mem 0x98100000-0x9aafffff]
+Oct 22 20:54:20.672692 <HOSTNAME> kernel: pci_bus 0000:49: resource 2 [mem 0x9822000000-0xa021ffffff 64bit pref]
+Oct 22 20:54:20.672791 <HOSTNAME> kernel: pci_bus 0000:56: resource 0 [io  0x5000-0x5fff]
+Oct 22 20:54:20.672836 <HOSTNAME> kernel: pci_bus 0000:56: resource 1 [mem 0x8c000000-0x93ffffff]
+Oct 22 20:54:20.672881 <HOSTNAME> kernel: pci_bus 0000:56: resource 2 [mem 0xb030000000-0xc82fffffff 64bit pref]
+Oct 22 20:54:20.672925 <HOSTNAME> kernel: pci_bus 0000:80: resource 0 [io  0x6000-0x6fff]
+Oct 22 20:54:20.672972 <HOSTNAME> kernel: pci_bus 0000:80: resource 1 [mem 0x84000000-0x8bffffff]
+Oct 22 20:54:20.673018 <HOSTNAME> kernel: pci_bus 0000:80: resource 2 [mem 0xc830000000-0xe02fffffff 64bit pref]
+Oct 22 20:54:20.673072 <HOSTNAME> kernel: pci 0000:2e:00.1: extending delay after power-on from D3hot to 20 msec
+Oct 22 20:54:20.673128 <HOSTNAME> kernel: pci 0000:2e:00.1: D0 power state depends on 0000:2e:00.0
+Oct 22 20:54:20.673132 <HOSTNAME> kernel: PCI: CLS 64 bytes, default 64
+Oct 22 20:54:20.673137 <HOSTNAME> kernel: Trying to unpack rootfs image as initramfs...
+Oct 22 20:54:20.673140 <HOSTNAME> kernel: Freeing initrd memory: 32392K
+Oct 22 20:54:20.673144 <HOSTNAME> kernel: DMAR: Intel-IOMMU force enabled due to platform opt in
+Oct 22 20:54:20.673149 <HOSTNAME> kernel: DMAR: No RMRR found
+Oct 22 20:54:20.673153 <HOSTNAME> kernel: DMAR: No ATSR found
+Oct 22 20:54:20.673157 <HOSTNAME> kernel: DMAR: dmar1: Using Queued invalidation
+Oct 22 20:54:20.673161 <HOSTNAME> kernel: DMAR: dmar0: Using Queued invalidation
+Oct 22 20:54:20.673165 <HOSTNAME> kernel: DMAR: dmar2: Using Queued invalidation
+Oct 22 20:54:20.673209 <HOSTNAME> kernel: pci 0000:00:04.0: Adding to iommu group 0
+Oct 22 20:54:20.673256 <HOSTNAME> kernel: pci 0000:00:0a.0: Adding to iommu group 1
+Oct 22 20:54:20.673301 <HOSTNAME> kernel: pci 0000:00:0b.0: Adding to iommu group 2
+Oct 22 20:54:20.673348 <HOSTNAME> kernel: pci 0000:00:02.0: Adding to iommu group 3
+Oct 22 20:54:20.673397 <HOSTNAME> kernel: pci 0000:00:00.0: Adding to iommu group 4
+Oct 22 20:54:20.673444 <HOSTNAME> kernel: pci 0000:00:06.0: Adding to iommu group 5
+Oct 22 20:54:20.673492 <HOSTNAME> kernel: pci 0000:00:07.0: Adding to iommu group 6
+Oct 22 20:54:20.673541 <HOSTNAME> kernel: pci 0000:00:07.1: Adding to iommu group 7
+Oct 22 20:54:20.673589 <HOSTNAME> kernel: pci 0000:00:07.2: Adding to iommu group 8
+Oct 22 20:54:20.673637 <HOSTNAME> kernel: pci 0000:00:07.3: Adding to iommu group 9
+Oct 22 20:54:20.673682 <HOSTNAME> kernel: pci 0000:00:0d.0: Adding to iommu group 10
+Oct 22 20:54:20.673730 <HOSTNAME> kernel: pci 0000:00:0d.2: Adding to iommu group 10
+Oct 22 20:54:20.673776 <HOSTNAME> kernel: pci 0000:00:0d.3: Adding to iommu group 10
+Oct 22 20:54:20.673826 <HOSTNAME> kernel: pci 0000:00:13.0: Adding to iommu group 11
+Oct 22 20:54:20.673872 <HOSTNAME> kernel: pci 0000:00:14.0: Adding to iommu group 12
+Oct 22 20:54:20.673916 <HOSTNAME> kernel: pci 0000:00:14.2: Adding to iommu group 12
+Oct 22 20:54:20.673962 <HOSTNAME> kernel: pci 0000:00:14.3: Adding to iommu group 13
+Oct 22 20:54:20.674007 <HOSTNAME> kernel: pci 0000:00:14.7: Adding to iommu group 14
+Oct 22 20:54:20.674053 <HOSTNAME> kernel: pci 0000:00:15.0: Adding to iommu group 15
+Oct 22 20:54:20.674098 <HOSTNAME> kernel: pci 0000:00:15.1: Adding to iommu group 15
+Oct 22 20:54:20.674148 <HOSTNAME> kernel: pci 0000:00:15.2: Adding to iommu group 15
+Oct 22 20:54:20.674193 <HOSTNAME> kernel: pci 0000:00:15.3: Adding to iommu group 15
+Oct 22 20:54:20.674237 <HOSTNAME> kernel: pci 0000:00:16.0: Adding to iommu group 16
+Oct 22 20:54:20.674281 <HOSTNAME> kernel: pci 0000:00:18.0: Adding to iommu group 17
+Oct 22 20:54:20.674324 <HOSTNAME> kernel: pci 0000:00:19.0: Adding to iommu group 18
+Oct 22 20:54:20.674366 <HOSTNAME> kernel: pci 0000:00:19.1: Adding to iommu group 18
+Oct 22 20:54:20.674409 <HOSTNAME> kernel: pci 0000:00:1f.0: Adding to iommu group 19
+Oct 22 20:54:20.674454 <HOSTNAME> kernel: pci 0000:00:1f.3: Adding to iommu group 19
+Oct 22 20:54:20.674499 <HOSTNAME> kernel: pci 0000:00:1f.4: Adding to iommu group 19
+Oct 22 20:54:20.674544 <HOSTNAME> kernel: pci 0000:00:1f.5: Adding to iommu group 19
+Oct 22 20:54:20.674592 <HOSTNAME> kernel: pci 0000:01:00.0: Adding to iommu group 20
+Oct 22 20:54:20.674638 <HOSTNAME> kernel: pci 0000:2c:00.0: Adding to iommu group 21
+Oct 22 20:54:20.674691 <HOSTNAME> kernel: pci 0000:2d:00.0: Adding to iommu group 22
+Oct 22 20:54:20.674746 <HOSTNAME> kernel: pci 0000:2d:01.0: Adding to iommu group 23
+Oct 22 20:54:20.674798 <HOSTNAME> kernel: pci 0000:2d:02.0: Adding to iommu group 24
+Oct 22 20:54:20.674850 <HOSTNAME> kernel: pci 0000:2d:03.0: Adding to iommu group 25
+Oct 22 20:54:20.674904 <HOSTNAME> kernel: pci 0000:2e:00.0: Adding to iommu group 26
+Oct 22 20:54:20.674960 <HOSTNAME> kernel: pci 0000:2e:00.1: Adding to iommu group 26
+Oct 22 20:54:20.674965 <HOSTNAME> kernel: DMAR: Intel(R) Virtualization Technology for Directed I/O
+Oct 22 20:54:20.674969 <HOSTNAME> kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 22 20:54:20.674973 <HOSTNAME> kernel: software IO TLB: mapped [mem 0x000000005c10e000-0x000000006010e000] (64MB)
+Oct 22 20:54:20.674977 <HOSTNAME> kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x73217d90685, max_idle_ns: 881590769617 ns
+Oct 22 20:54:20.674981 <HOSTNAME> kernel: clocksource: Switched to clocksource tsc
+Oct 22 20:54:20.674985 <HOSTNAME> kernel: Initialise system trusted keyrings
+Oct 22 20:54:20.674990 <HOSTNAME> kernel: Key type blacklist registered
+Oct 22 20:54:20.674994 <HOSTNAME> kernel: workingset: timestamp_bits=36 (anon: 31) max_order=24 bucket_order=0 (anon: 0)
+Oct 22 20:54:20.675000 <HOSTNAME> kernel: fuse: init (API version 7.45)
+Oct 22 20:54:20.675005 <HOSTNAME> kernel: integrity: Platform Keyring initialized
+Oct 22 20:54:20.675008 <HOSTNAME> kernel: integrity: Machine keyring initialized
+Oct 22 20:54:20.675013 <HOSTNAME> kernel: Key type asymmetric registered
+Oct 22 20:54:20.675017 <HOSTNAME> kernel: Asymmetric key parser 'x509' registered
+Oct 22 20:54:20.675021 <HOSTNAME> kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+Oct 22 20:54:20.675025 <HOSTNAME> kernel: io scheduler mq-deadline registered
+Oct 22 20:54:20.675029 <HOSTNAME> kernel: io scheduler kyber registered
+Oct 22 20:54:20.675033 <HOSTNAME> kernel: io scheduler bfq registered
+Oct 22 20:54:20.675038 <HOSTNAME> kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 22 20:54:20.675087 <HOSTNAME> kernel: pcieport 0000:00:06.0: PME: Signaling with IRQ 125
+Oct 22 20:54:20.675133 <HOSTNAME> kernel: pcieport 0000:00:06.0: AER: enabled with IRQ 125
+Oct 22 20:54:20.675178 <HOSTNAME> kernel: pcieport 0000:00:07.0: PME: Signaling with IRQ 126
+Oct 22 20:54:20.675223 <HOSTNAME> kernel: pcieport 0000:00:07.0: AER: enabled with IRQ 126
+Oct 22 20:54:20.675270 <HOSTNAME> kernel: pcieport 0000:00:07.0: pciehp: Slot #10 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675314 <HOSTNAME> kernel: pcieport 0000:00:07.1: PME: Signaling with IRQ 127
+Oct 22 20:54:20.675359 <HOSTNAME> kernel: pcieport 0000:00:07.1: AER: enabled with IRQ 127
+Oct 22 20:54:20.675404 <HOSTNAME> kernel: pcieport 0000:00:07.1: pciehp: Slot #10 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675446 <HOSTNAME> kernel: pcieport 0000:00:07.2: PME: Signaling with IRQ 128
+Oct 22 20:54:20.675489 <HOSTNAME> kernel: pcieport 0000:00:07.2: AER: enabled with IRQ 128
+Oct 22 20:54:20.675531 <HOSTNAME> kernel: pcieport 0000:00:07.2: pciehp: Slot #10 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675574 <HOSTNAME> kernel: pcieport 0000:00:07.3: PME: Signaling with IRQ 129
+Oct 22 20:54:20.675617 <HOSTNAME> kernel: pcieport 0000:00:07.3: AER: enabled with IRQ 129
+Oct 22 20:54:20.675659 <HOSTNAME> kernel: pcieport 0000:00:07.3: pciehp: Slot #10 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675709 <HOSTNAME> kernel: pcieport 0000:2d:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675759 <HOSTNAME> kernel: pcieport 0000:2d:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675807 <HOSTNAME> kernel: pcieport 0000:2d:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+Oct 22 20:54:20.675812 <HOSTNAME> kernel: ACPI: AC: AC Adapter [ACAD] (on-line)
+Oct 22 20:54:20.675815 <HOSTNAME> kernel: input: Lid Switch as /devices/pci0000:00/0000:00:1f.0/PNP0C09:00/PNP0C0D:00/input/input0
+Oct 22 20:54:20.675819 <HOSTNAME> kernel: ACPI: button: Lid Switch [LID0]
+Oct 22 20:54:20.675823 <HOSTNAME> kernel: input: Power Button as /devices/platform/PNP0C0C:00/input/input1
+Oct 22 20:54:20.675828 <HOSTNAME> kernel: ACPI: button: Power Button [PWRB]
+Oct 22 20:54:20.675877 <HOSTNAME> kernel: acpi LNXTHERM:00: registered as thermal_zone0
+Oct 22 20:54:20.675882 <HOSTNAME> kernel: ACPI: thermal: Thermal Zone [TZ00] (47 C)
+Oct 22 20:54:20.675928 <HOSTNAME> kernel: acpi LNXTHERM:01: registered as thermal_zone1
+Oct 22 20:54:20.675933 <HOSTNAME> kernel: ACPI: thermal: Thermal Zone [TZ01] (34 C)
+Oct 22 20:54:20.675979 <HOSTNAME> kernel: acpi LNXTHERM:02: registered as thermal_zone2
+Oct 22 20:54:20.675984 <HOSTNAME> kernel: ACPI: thermal: Thermal Zone [TZ02] (30 C)
+Oct 22 20:54:20.676028 <HOSTNAME> kernel: acpi LNXTHERM:03: registered as thermal_zone3
+Oct 22 20:54:20.676034 <HOSTNAME> kernel: ACPI: thermal: Thermal Zone [TZ03] (33 C)
+Oct 22 20:54:20.676084 <HOSTNAME> kernel: acpi LNXTHERM:04: registered as thermal_zone4
+Oct 22 20:54:20.676089 <HOSTNAME> kernel: ACPI: thermal: Thermal Zone [TZ04] (28 C)
+Oct 22 20:54:20.676094 <HOSTNAME> kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct 22 20:54:20.676098 <HOSTNAME> kernel: ACPI: battery: Slot [BAT1] (battery present)
+Oct 22 20:54:20.676101 <HOSTNAME> kernel: hpet_acpi_probe: no address or irqs in _CRS
+Oct 22 20:54:20.676106 <HOSTNAME> kernel: Non-volatile memory driver v1.3
+Oct 22 20:54:20.676110 <HOSTNAME> kernel: ACPI: bus type drm_connector registered
+Oct 22 20:54:20.676156 <HOSTNAME> kernel: xhci_hcd 0000:00:0d.0: xHCI Host Controller
+Oct 22 20:54:20.676200 <HOSTNAME> kernel: xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 1
+Oct 22 20:54:20.676244 <HOSTNAME> kernel: xhci_hcd 0000:00:0d.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000200009810
+Oct 22 20:54:20.676289 <HOSTNAME> kernel: xhci_hcd 0000:00:0d.0: xHCI Host Controller
+Oct 22 20:54:20.676335 <HOSTNAME> kernel: xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 2
+Oct 22 20:54:20.676382 <HOSTNAME> kernel: xhci_hcd 0000:00:0d.0: Host supports USB 3.2 Enhanced SuperSpeed
+Oct 22 20:54:20.676445 <HOSTNAME> kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.02
+Oct 22 20:54:20.676494 <HOSTNAME> kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 20:54:20.676536 <HOSTNAME> kernel: usb usb1: Product: xHCI Host Controller
+Oct 22 20:54:20.676576 <HOSTNAME> kernel: usb usb1: Manufacturer: Linux 7.2.8-9-omarchy xhci-hcd
+Oct 22 20:54:20.676616 <HOSTNAME> kernel: usb usb1: SerialNumber: 0000:00:0d.0
+Oct 22 20:54:20.676671 <HOSTNAME> kernel: hub 1-0:1.0: USB hub found
+Oct 22 20:54:20.676726 <HOSTNAME> kernel: hub 1-0:1.0: 1 port detected
+Oct 22 20:54:20.676777 <HOSTNAME> kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.02
+Oct 22 20:54:20.676819 <HOSTNAME> kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 20:54:20.676858 <HOSTNAME> kernel: usb usb2: Product: xHCI Host Controller
+Oct 22 20:54:20.676897 <HOSTNAME> kernel: usb usb2: Manufacturer: Linux 7.2.8-9-omarchy xhci-hcd
+Oct 22 20:54:20.676934 <HOSTNAME> kernel: usb usb2: SerialNumber: 0000:00:0d.0
+Oct 22 20:54:20.676986 <HOSTNAME> kernel: hub 2-0:1.0: USB hub found
+Oct 22 20:54:20.677036 <HOSTNAME> kernel: hub 2-0:1.0: 4 ports detected
+Oct 22 20:54:20.677081 <HOSTNAME> kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Oct 22 20:54:20.677126 <HOSTNAME> kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+Oct 22 20:54:20.677170 <HOSTNAME> kernel: xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000200009810
+Oct 22 20:54:20.677213 <HOSTNAME> kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Oct 22 20:54:20.677255 <HOSTNAME> kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+Oct 22 20:54:20.677299 <HOSTNAME> kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.2 Enhanced SuperSpeed
+Oct 22 20:54:20.677350 <HOSTNAME> kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.02
+Oct 22 20:54:20.677391 <HOSTNAME> kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 20:54:20.677432 <HOSTNAME> kernel: usb usb3: Product: xHCI Host Controller
+Oct 22 20:54:20.677471 <HOSTNAME> kernel: usb usb3: Manufacturer: Linux 7.2.8-9-omarchy xhci-hcd
+Oct 22 20:54:20.677510 <HOSTNAME> kernel: usb usb3: SerialNumber: 0000:00:14.0
+Oct 22 20:54:20.677560 <HOSTNAME> kernel: hub 3-0:1.0: USB hub found
+Oct 22 20:54:20.677608 <HOSTNAME> kernel: hub 3-0:1.0: 10 ports detected
+Oct 22 20:54:20.677658 <HOSTNAME> kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.02
+Oct 22 20:54:20.677702 <HOSTNAME> kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 20:54:20.677743 <HOSTNAME> kernel: usb usb4: Product: xHCI Host Controller
+Oct 22 20:54:20.677784 <HOSTNAME> kernel: usb usb4: Manufacturer: Linux 7.2.8-9-omarchy xhci-hcd
+Oct 22 20:54:20.677823 <HOSTNAME> kernel: usb usb4: SerialNumber: 0000:00:14.0
+Oct 22 20:54:20.677875 <HOSTNAME> kernel: hub 4-0:1.0: USB hub found
+Oct 22 20:54:20.677927 <HOSTNAME> kernel: hub 4-0:1.0: 2 ports detected
+Oct 22 20:54:20.677932 <HOSTNAME> kernel: usbcore: registered new interface driver usbserial_generic
+Oct 22 20:54:20.677936 <HOSTNAME> kernel: usbserial: USB Serial support registered for generic
+Oct 22 20:54:20.677940 <HOSTNAME> kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Oct 22 20:54:20.677945 <HOSTNAME> kernel: i8042: Warning: Keylock active
+Oct 22 20:54:20.678001 <HOSTNAME> kernel: usb 3-4: new full-speed USB device number 2 using xhci_hcd
+Oct 22 20:54:20.678055 <HOSTNAME> kernel: usb 2-2: new SuperSpeed Plus Gen 2x2 USB device number 2 using xhci_hcd
+Oct 22 20:54:20.678106 <HOSTNAME> kernel: usb 2-2: New USB device found, idVendor=8087, idProduct=5787, bcdDevice= 0.00
+Oct 22 20:54:20.678147 <HOSTNAME> kernel: usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 20:54:20.678185 <HOSTNAME> kernel: usb 2-2: Product: USB3 HUB
+Oct 22 20:54:20.678222 <HOSTNAME> kernel: usb 2-2: Manufacturer: Intel Corporation
+Oct 22 20:54:20.678273 <HOSTNAME> kernel: hub 2-2:1.0: USB hub found
+Oct 22 20:54:20.678323 <HOSTNAME> kernel: hub 2-2:1.0: 4 ports detected
+Oct 22 20:54:20.678370 <HOSTNAME> kernel: usb 3-4: New USB device found, idVendor=32ac, idProduct=0002, bcdDevice= 0.00
+Oct 22 20:54:20.678411 <HOSTNAME> kernel: usb 3-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 22 20:54:20.678450 <HOSTNAME> kernel: usb 3-4: Product: HDMI Expansion Card
+Oct 22 20:54:20.678487 <HOSTNAME> kernel: usb 3-4: Manufacturer: Framework
+Oct 22 20:54:20.678526 <HOSTNAME> kernel: usb 3-4: SerialNumber: <SERIAL>
+Oct 22 20:54:20.678576 <HOSTNAME> kernel: usb 3-5: new high-speed USB device number 3 using xhci_hcd
+Oct 22 20:54:20.678626 <HOSTNAME> kernel: usb 3-5: New USB device found, idVendor=1d5c, idProduct=5801, bcdDevice= 1.01
+Oct 22 20:54:20.678665 <HOSTNAME> kernel: usb 3-5: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 20:54:20.678707 <HOSTNAME> kernel: usb 3-5: Product: USB2.0 Hub
+Oct 22 20:54:20.678749 <HOSTNAME> kernel: usb 3-5: Manufacturer: Fresco Logic, Inc.
+Oct 22 20:54:20.678804 <HOSTNAME> kernel: hub 3-5:1.0: USB hub found
+Oct 22 20:54:20.678862 <HOSTNAME> kernel: hub 3-5:1.0: 5 ports detected
+Oct 22 20:54:20.678918 <HOSTNAME> kernel: usb 3-6: new high-speed USB device number 4 using xhci_hcd
+Oct 22 20:54:20.678925 <HOSTNAME> kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct 22 20:54:20.678930 <HOSTNAME> kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct 22 20:54:20.678984 <HOSTNAME> kernel: rtc_cmos PNP0B00:00: RTC can wake from S4
+Oct 22 20:54:20.679034 <HOSTNAME> kernel: rtc_cmos PNP0B00:00: registered as rtc0
+Oct 22 20:54:20.679082 <HOSTNAME> kernel: rtc_cmos PNP0B00:00: setting system clock to 2026-10-23T00:53:52 UTC (1792716832)
+Oct 22 20:54:20.679129 <HOSTNAME> kernel: rtc_cmos PNP0B00:00: alarms up to one month, y3k, 242 bytes nvram
+Oct 22 20:54:20.679134 <HOSTNAME> kernel: intel_pstate: Intel P-state driver initializing
+Oct 22 20:54:20.679139 <HOSTNAME> kernel: Hybrid CPU capacity scaling enabled
+Oct 22 20:54:20.679207 <HOSTNAME> kernel: processor cpu0: EM: created perf domain
+Oct 22 20:54:20.679270 <HOSTNAME> kernel: processor cpu1: EM: created perf domain
+Oct 22 20:54:20.679329 <HOSTNAME> kernel: processor cpu2: EM: created perf domain
+Oct 22 20:54:20.679391 <HOSTNAME> kernel: processor cpu3: EM: created perf domain
+Oct 22 20:54:20.679452 <HOSTNAME> kernel: processor cpu4: EM: created perf domain
+Oct 22 20:54:20.679512 <HOSTNAME> kernel: processor cpu5: EM: created perf domain
+Oct 22 20:54:20.679570 <HOSTNAME> kernel: processor cpu6: EM: created perf domain
+Oct 22 20:54:20.679634 <HOSTNAME> kernel: processor cpu7: EM: created perf domain
+Oct 22 20:54:20.679696 <HOSTNAME> kernel: processor cpu8: EM: created perf domain
+Oct 22 20:54:20.679759 <HOSTNAME> kernel: processor cpu9: EM: created perf domain
+Oct 22 20:54:20.679824 <HOSTNAME> kernel: processor cpu10: EM: created perf domain
+Oct 22 20:54:20.679889 <HOSTNAME> kernel: processor cpu11: EM: created perf domain
+Oct 22 20:54:20.679951 <HOSTNAME> kernel: processor cpu12: EM: created perf domain
+Oct 22 20:54:20.680014 <HOSTNAME> kernel: processor cpu13: EM: created perf domain
+Oct 22 20:54:20.680079 <HOSTNAME> kernel: processor cpu14: EM: created perf domain
+Oct 22 20:54:20.680132 <HOSTNAME> kernel: processor cpu15: EM: created perf domain
+Oct 22 20:54:20.680137 <HOSTNAME> kernel: intel_pstate: HWP enabled
+Oct 22 20:54:20.680141 <HOSTNAME> kernel: Relocating firmware framebuffer to offset 0x0000000000800000[d] within [mem 0x8000000000-0x800fffffff flags 0x14220c]
+Oct 22 20:54:20.680164 <HOSTNAME> kernel: simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+Oct 22 20:54:20.680169 <HOSTNAME> kernel: [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+Oct 22 20:54:20.680173 <HOSTNAME> kernel: fbcon: Deferring console take-over
+Oct 22 20:54:20.680191 <HOSTNAME> kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+Oct 22 20:54:20.680196 <HOSTNAME> kernel: hid: raw HID events driver (C) Jiri Kosina
+Oct 22 20:54:20.680200 <HOSTNAME> kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Oct 22 20:54:20.680264 <HOSTNAME> kernel: hid-generic 0003:32AC:0002.0001: hiddev96,hidraw0: USB HID v1.11 Device [Framework HDMI Expansion Card] on usb-0000:00:14.0-4/input1
+Oct 22 20:54:20.680270 <HOSTNAME> kernel: usbcore: registered new interface driver usbhid
+Oct 22 20:54:20.680274 <HOSTNAME> kernel: usbhid: USB HID core driver
+Oct 22 20:54:20.680278 <HOSTNAME> kernel: drop_monitor: Initializing network drop monitor service
+Oct 22 20:54:20.680282 <HOSTNAME> kernel: NET: Registered PF_INET6 protocol family
+Oct 22 20:54:20.680286 <HOSTNAME> kernel: Segment Routing with IPv6
+Oct 22 20:54:20.680290 <HOSTNAME> kernel: RPL Segment Routing with IPv6
+Oct 22 20:54:20.680293 <HOSTNAME> kernel: In-situ OAM (IOAM) with IPv6
+Oct 22 20:54:20.680297 <HOSTNAME> kernel: NET: Registered PF_PACKET protocol family
+Oct 22 20:54:20.680301 <HOSTNAME> kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Oct 22 20:54:20.680306 <HOSTNAME> kernel: microcode: Current revision: 0x0000011c
+Oct 22 20:54:20.680310 <HOSTNAME> kernel: microcode: Updated early from: 0x0000011a
+Oct 22 20:54:20.680314 <HOSTNAME> kernel: IPI shorthand broadcast: enabled
+Oct 22 20:54:20.680318 <HOSTNAME> kernel: sched_clock: Marking stable (1443001784, 6117897)->(1468750187, -19630506)
+Oct 22 20:54:20.680322 <HOSTNAME> kernel: registered taskstats version 1
+Oct 22 20:54:20.680325 <HOSTNAME> kernel: Loading compiled-in X.509 certificates
+Oct 22 20:54:20.680330 <HOSTNAME> kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 1cb2c8ad2b30ee14e838436c967a4dee0e645ae8'
+Oct 22 20:54:20.680334 <HOSTNAME> kernel: Demotion targets for Node 0: null
+Oct 22 20:54:20.680337 <HOSTNAME> kernel: Key type .fscrypt registered
+Oct 22 20:54:20.680342 <HOSTNAME> kernel: Key type fscrypt-provisioning registered
+Oct 22 20:54:20.680347 <HOSTNAME> kernel: Btrfs loaded, zoned=yes, fsverity=yes
+Oct 22 20:54:20.680351 <HOSTNAME> kernel: Key type big_key registered
+Oct 22 20:54:20.680354 <HOSTNAME> kernel: Key type trusted registered
+Oct 22 20:54:20.680408 <HOSTNAME> kernel: usb 3-6: New USB device found, idVendor=32ac, idProduct=001c, bcdDevice= 1.11
+Oct 22 20:54:20.680452 <HOSTNAME> kernel: usb 3-6: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+Oct 22 20:54:20.680497 <HOSTNAME> kernel: usb 3-6: Product: Laptop Webcam Module (2nd Gen)
+Oct 22 20:54:20.680541 <HOSTNAME> kernel: usb 3-6: Manufacturer: Framework
+Oct 22 20:54:20.680586 <HOSTNAME> kernel: usb 3-6: SerialNumber: <SERIAL>
+Oct 22 20:54:20.680591 <HOSTNAME> kernel: Key type encrypted registered
+Oct 22 20:54:20.680595 <HOSTNAME> kernel: Loading compiled-in module X.509 certificates
+Oct 22 20:54:20.680600 <HOSTNAME> kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 1cb2c8ad2b30ee14e838436c967a4dee0e645ae8'
+Oct 22 20:54:20.680604 <HOSTNAME> kernel: ima: Allocated hash algorithm: sha256
+Oct 22 20:54:20.680608 <HOSTNAME> kernel: ima: No architecture policies found
+Oct 22 20:54:20.680613 <HOSTNAME> kernel: evm: Initialising EVM extended attributes:
+Oct 22 20:54:20.680617 <HOSTNAME> kernel: evm: security.selinux
+Oct 22 20:54:20.680621 <HOSTNAME> kernel: evm: security.SMACK64
+Oct 22 20:54:20.680626 <HOSTNAME> kernel: evm: security.SMACK64EXEC (disabled)
+Oct 22 20:54:20.680630 <HOSTNAME> kernel: evm: security.SMACK64TRANSMUTE (disabled)
+Oct 22 20:54:20.680634 <HOSTNAME> kernel: evm: security.SMACK64MMAP (disabled)
+Oct 22 20:54:20.680638 <HOSTNAME> kernel: evm: security.apparmor
+Oct 22 20:54:20.680642 <HOSTNAME> kernel: evm: security.ima
+Oct 22 20:54:20.680646 <HOSTNAME> kernel: evm: security.capability
+Oct 22 20:54:20.680650 <HOSTNAME> kernel: evm: HMAC attrs: 0x1
+Oct 22 20:54:20.680654 <HOSTNAME> kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 22 20:54:20.680658 <HOSTNAME> kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+Oct 22 20:54:20.680663 <HOSTNAME> kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 22 20:54:20.680667 <HOSTNAME> kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+Oct 22 20:54:20.680671 <HOSTNAME> kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 22 20:54:20.680675 <HOSTNAME> kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+Oct 22 20:54:20.680680 <HOSTNAME> kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 22 20:54:20.680684 <HOSTNAME> kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+Oct 22 20:54:20.680688 <HOSTNAME> kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 22 20:54:20.680692 <HOSTNAME> kernel: integrity: Loaded X.509 cert 'Microsoft Option ROM UEFI CA 2023: 514fbf937fa46fb57bf07af8bed84b3b864b1711'
+Oct 22 20:54:20.680696 <HOSTNAME> kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 22 20:54:20.680700 <HOSTNAME> kernel: integrity: Loaded X.509 cert 'frame.work-LaptopDB: b9b0a774d4c4017582a0ee01b43205f970aec47c'
+Oct 22 20:54:20.680705 <HOSTNAME> kernel: BERT: [Hardware Error]: Skipped 1 error records
+Oct 22 20:54:20.680709 <HOSTNAME> kernel: BERT: Total records found: 1
+Oct 22 20:54:20.680714 <HOSTNAME> kernel: PM:   Magic number: 14:90:861
+Oct 22 20:54:20.680719 <HOSTNAME> kernel: RAS: Correctable Errors collector initialized.
+Oct 22 20:54:20.680723 <HOSTNAME> kernel: clk: Disabling unused clocks
+Oct 22 20:54:20.680727 <HOSTNAME> kernel: PM: genpd: Disabling unused power domains
+Oct 22 20:54:20.680731 <HOSTNAME> kernel: Freeing unused decrypted memory: 2028K
+Oct 22 20:54:20.680735 <HOSTNAME> kernel: Freeing unused kernel image (initmem) memory: 5268K
+Oct 22 20:54:20.680739 <HOSTNAME> kernel: Write protecting the kernel read-only data: 47104k
+Oct 22 20:54:20.680745 <HOSTNAME> kernel: Freeing unused kernel image (text/rodata gap) memory: 1608K
+Oct 22 20:54:20.680749 <HOSTNAME> kernel: Freeing unused kernel image (rodata/data gap) memory: 868K
+Oct 22 20:54:20.680753 <HOSTNAME> kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 22 20:54:20.680757 <HOSTNAME> kernel: rodata_test: all tests were successful
+Oct 22 20:54:20.680761 <HOSTNAME> kernel: Run /init as init process
+Oct 22 20:54:20.680765 <HOSTNAME> kernel:   with arguments:
+Oct 22 20:54:20.680769 <HOSTNAME> kernel:     /init
+Oct 22 20:54:20.680773 <HOSTNAME> kernel:     splash
+Oct 22 20:54:20.680777 <HOSTNAME> kernel:   with environment:
+Oct 22 20:54:20.680782 <HOSTNAME> kernel:     HOME=/
+Oct 22 20:54:20.680786 <HOSTNAME> kernel:     TERM=linux
+Oct 22 20:54:20.680790 <HOSTNAME> kernel:     cryptdevice=UUID=<UUID>:omarchy_root
+Oct 22 20:54:20.680794 <HOSTNAME> kernel:     fred=on
+Oct 22 20:54:20.680853 <HOSTNAME> kernel: usb 3-7: new full-speed USB device number 5 using xhci_hcd
+Oct 22 20:54:20.680859 <HOSTNAME> kernel: ACPI: bus type thunderbolt registered
+Oct 22 20:54:20.680918 <HOSTNAME> kernel: thunderbolt 0-3: new device found, vendor=0x8087 device=0x1234
+Oct 22 20:54:20.680971 <HOSTNAME> kernel: thunderbolt 0-3: Intel TBT5
+Oct 22 20:54:20.681024 <HOSTNAME> kernel: usb 3-7: New USB device found, idVendor=27c6, idProduct=609c, bcdDevice= 1.00
+Oct 22 20:54:20.681066 <HOSTNAME> kernel: usb 3-7: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 22 20:54:20.681105 <HOSTNAME> kernel: usb 3-7: Product: Goodix Fingerprint USB Device
+Oct 22 20:54:20.681147 <HOSTNAME> kernel: usb 3-7: Manufacturer: Goodix Technology Co., Ltd.
+Oct 22 20:54:20.681194 <HOSTNAME> kernel: usb 3-7: SerialNumber: <SERIAL>_XXXX_MOC_B0
+Oct 22 20:54:20.681250 <HOSTNAME> kernel: usb 3-5.1: new high-speed USB device number 6 using xhci_hcd
+Oct 22 20:54:20.681303 <HOSTNAME> kernel: usb 3-5.1: New USB device found, idVendor=045b, idProduct=0209, bcdDevice= 1.00
+Oct 22 20:54:20.681348 <HOSTNAME> kernel: usb 3-5.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Oct 22 20:54:20.681400 <HOSTNAME> kernel: hub 3-5.1:1.0: USB hub found
+Oct 22 20:54:20.681452 <HOSTNAME> kernel: hub 3-5.1:1.0: 4 ports detected
+Oct 22 20:54:20.681503 <HOSTNAME> kernel: thunderbolt 0-0:3.1: new retimer found, vendor=0x8087 device=0xd9c
+Oct 22 20:54:20.681556 <HOSTNAME> kernel: usb 3-5.4: new full-speed USB device number 7 using xhci_hcd
+Oct 22 20:54:20.681608 <HOSTNAME> kernel: usb 3-5.4: New USB device found, idVendor=1234, idProduct=8087, bcdDevice= 1.00
+Oct 22 20:54:20.681650 <HOSTNAME> kernel: usb 3-5.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 22 20:54:20.681689 <HOSTNAME> kernel: usb 3-5.4: Product: TBT5
+Oct 22 20:54:20.681738 <HOSTNAME> kernel: usb 3-5.4: Manufacturer: Intel
+Oct 22 20:54:20.681778 <HOSTNAME> kernel: usb 3-5.4: SerialNumber: 1234
+Oct 22 20:54:20.681837 <HOSTNAME> kernel: usb 3-5.1.2: new full-speed USB device number 8 using xhci_hcd
+Oct 22 20:54:20.681895 <HOSTNAME> kernel: usb 3-5.1.2: New USB device found, idVendor=08bb, idProduct=2902, bcdDevice= 1.00
+Oct 22 20:54:20.681941 <HOSTNAME> kernel: usb 3-5.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 20:54:20.681988 <HOSTNAME> kernel: usb 3-5.1.2: Product: USB Audio CODEC 
+Oct 22 20:54:20.682033 <HOSTNAME> kernel: usb 3-5.1.2: Manufacturer: Burr-Brown from TI              
+Oct 22 20:54:20.682038 <HOSTNAME> kernel: input: Burr-Brown from TI               USB Audio CODEC  as /devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5.1/3-5.1.2/3-5.1.2:1.3/0003:08BB:2902.0002/input/input4
+Oct 22 20:54:20.682101 <HOSTNAME> kernel: hid-generic 0003:08BB:2902.0002: input,hidraw1: USB HID v1.00 Device [Burr-Brown from TI               USB Audio CODEC ] on usb-0000:00:14.0-5.1.2/input3
+Oct 22 20:54:20.682160 <HOSTNAME> kernel: usb 3-5.1.3: new full-speed USB device number 9 using xhci_hcd
+Oct 22 20:54:20.682215 <HOSTNAME> kernel: usb 3-5.1.3: New USB device found, idVendor=041e, idProduct=3273, bcdDevice= 1.00
+Oct 22 20:54:20.682269 <HOSTNAME> kernel: usb 3-5.1.3: config 1 has an invalid interface number: 3 but max is 2
+Oct 22 20:54:20.682322 <HOSTNAME> kernel: usb 3-5.1.3: config 1 has no interface number 2
+Oct 22 20:54:20.682369 <HOSTNAME> kernel: usb 3-5.1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 22 20:54:20.682415 <HOSTNAME> kernel: usb 3-5.1.3: Product: Stage V2
+Oct 22 20:54:20.682459 <HOSTNAME> kernel: usb 3-5.1.3: Manufacturer: ACTIONS
+Oct 22 20:54:20.682503 <HOSTNAME> kernel: usb 3-5.1.3: SerialNumber: ㉕捤稰眷㕳愳㤷湲
+Oct 22 20:54:20.682508 <HOSTNAME> kernel: input: ACTIONS Stage V2 as /devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5.1/3-5.1.3/3-5.1.3:1.3/0003:041E:3273.0003/input/input5
+Oct 22 20:54:20.682568 <HOSTNAME> kernel: hid-generic 0003:041E:3273.0003: input,hidraw2: USB HID v1.00 Device [ACTIONS Stage V2] on usb-0000:00:14.0-5.1.3/input3
+Oct 22 20:54:20.682573 <HOSTNAME> kernel: Key type psk registered
+Oct 22 20:54:20.682616 <HOSTNAME> kernel: intel-lpss 0000:00:15.0: enabling device (0004 -> 0006)
+Oct 22 20:54:20.682663 <HOSTNAME> kernel: idma64 idma64.0: Found Intel integrated DMA 64-bit
+Oct 22 20:54:20.682708 <HOSTNAME> kernel: nvme 0000:01:00.0: platform quirk: setting simple suspend
+Oct 22 20:54:20.682777 <HOSTNAME> kernel: nvme nvme0: pci function 0000:01:00.0
+Oct 22 20:54:20.682824 <HOSTNAME> kernel: intel-lpss 0000:00:15.1: enabling device (0004 -> 0006)
+Oct 22 20:54:20.682871 <HOSTNAME> kernel: idma64 idma64.1: Found Intel integrated DMA 64-bit
+Oct 22 20:54:20.682916 <HOSTNAME> kernel: intel-lpss 0000:00:15.2: enabling device (0004 -> 0006)
+Oct 22 20:54:20.682963 <HOSTNAME> kernel: idma64 idma64.2: Found Intel integrated DMA 64-bit
+Oct 22 20:54:20.683008 <HOSTNAME> kernel: intel-lpss 0000:00:15.3: enabling device (0004 -> 0006)
+Oct 22 20:54:20.683054 <HOSTNAME> kernel: idma64 idma64.3: Found Intel integrated DMA 64-bit
+Oct 22 20:54:20.683095 <HOSTNAME> kernel: intel-lpss 0000:00:19.0: enabling device (0004 -> 0006)
+Oct 22 20:54:20.683135 <HOSTNAME> kernel: intel-lpss 0000:00:19.1: enabling device (0004 -> 0006)
+Oct 22 20:54:20.683171 <HOSTNAME> kernel: nvme nvme0: passthrough uses implicit buffer lengths
+Oct 22 20:54:20.683207 <HOSTNAME> kernel: nvme nvme0: 16/0/0 default/read/poll queues
+Oct 22 20:54:20.683212 <HOSTNAME> kernel:  nvme0n1: p1 p2 p3 p4 p5 p6 p7
+Oct 22 20:54:20.683268 <HOSTNAME> kernel: usb 3-5.1.4: new high-speed USB device number 10 using xhci_hcd
+Oct 22 20:54:20.683310 <HOSTNAME> kernel: xe 0000:00:02.0: vgaarb: deactivate vga console
+Oct 22 20:54:20.683352 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Running in SR-IOV PF mode
+Oct 22 20:54:20.683393 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Found pantherlake (device ID b082) integrated display version 30.00 stepping B0
+Oct 22 20:54:20.683437 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Finished loading DMC firmware i915/xe3lpd_dmc.bin (v2.36)
+Oct 22 20:54:20.683495 <HOSTNAME> kernel: usb 3-5.1.4: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=44.23
+Oct 22 20:54:20.683542 <HOSTNAME> kernel: usb 3-5.1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 20:54:20.683587 <HOSTNAME> kernel: usb 3-5.1.4: Product: USB2.0 Hub
+Oct 22 20:54:20.683633 <HOSTNAME> kernel: usb 3-5.1.4: Manufacturer: GenesysLogic
+Oct 22 20:54:20.683691 <HOSTNAME> kernel: hub 3-5.1.4:1.0: USB hub found
+Oct 22 20:54:20.683747 <HOSTNAME> kernel: hub 3-5.1.4:1.0: 4 ports detected
+Oct 22 20:54:20.683789 <HOSTNAME> kernel: xe 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=io:owns=io+mem
+Oct 22 20:54:20.683838 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT0: Using GuC firmware from xe/ptl_guc_70.bin version 70.72.1
+Oct 22 20:54:20.683905 <HOSTNAME> kernel: usb 3-5.1.1: new high-speed USB device number 11 using xhci_hcd
+Oct 22 20:54:20.683969 <HOSTNAME> kernel: usb 3-5.1.1: New USB device found, idVendor=045b, idProduct=0209, bcdDevice= 1.00
+Oct 22 20:54:20.684021 <HOSTNAME> kernel: usb 3-5.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Oct 22 20:54:20.684085 <HOSTNAME> kernel: hub 3-5.1.1:1.0: USB hub found
+Oct 22 20:54:20.684148 <HOSTNAME> kernel: hub 3-5.1.1:1.0: 4 ports detected
+Oct 22 20:54:20.684194 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT0: ccs1 fused off
+Oct 22 20:54:20.684237 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT0: ccs2 fused off
+Oct 22 20:54:20.684280 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT0: ccs3 fused off
+Oct 22 20:54:20.684324 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: Using GuC firmware from xe/ptl_guc_70.bin version 70.72.1
+Oct 22 20:54:20.684365 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: Using HuC firmware from xe/ptl_huc.bin version 10.3.3
+Oct 22 20:54:20.684404 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: Using GSC firmware from xe/ptl_gsc_1.bin version 105.0.2.1397
+Oct 22 20:54:20.684440 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs1 fused off
+Oct 22 20:54:20.684477 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs2 fused off
+Oct 22 20:54:20.684516 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs3 fused off
+Oct 22 20:54:20.684558 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs4 fused off
+Oct 22 20:54:20.684598 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs5 fused off
+Oct 22 20:54:20.684639 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs6 fused off
+Oct 22 20:54:20.684679 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vcs7 fused off
+Oct 22 20:54:20.684724 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vecs1 fused off
+Oct 22 20:54:20.684767 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vecs2 fused off
+Oct 22 20:54:20.684810 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: vecs3 fused off
+Oct 22 20:54:20.684874 <HOSTNAME> kernel: usb 3-5.1.4.4: new high-speed USB device number 12 using xhci_hcd
+Oct 22 20:54:20.684921 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Registered 4 planes with drm panic
+Oct 22 20:54:20.684926 <HOSTNAME> kernel: [drm] Initialized xe 1.1.0 for 0000:00:02.0 on minor 0
+Oct 22 20:54:20.684931 <HOSTNAME> kernel: ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Oct 22 20:54:20.684935 <HOSTNAME> kernel: input: Video Bus as /devices/pci0000:00/acpi.video_bus.0/input/input6
+Oct 22 20:54:20.684995 <HOSTNAME> kernel: usb 3-5.1.4.4: New USB device found, idVendor=0b95, idProduct=1790, bcdDevice= 1.00
+Oct 22 20:54:20.685046 <HOSTNAME> kernel: usb 3-5.1.4.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 22 20:54:20.685098 <HOSTNAME> kernel: usb 3-5.1.4.4: Product: AX88179
+Oct 22 20:54:20.685145 <HOSTNAME> kernel: usb 3-5.1.4.4: Manufacturer: ASIX Elec.
+Oct 22 20:54:20.685191 <HOSTNAME> kernel: usb 3-5.1.4.4: SerialNumber: <SERIAL>
+Oct 22 20:54:20.685196 <HOSTNAME> kernel: fbcon: xedrmfb (fb0) is primary device
+Oct 22 20:54:20.685200 <HOSTNAME> kernel: fbcon: Deferring console take-over
+Oct 22 20:54:20.685243 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] fb0: xedrmfb frame buffer device
+Oct 22 20:54:20.685287 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Tile0: GT1: found GSC cv105.1.0
+Oct 22 20:54:20.685354 <HOSTNAME> kernel: usb 3-5.1.1.1: new full-speed USB device number 13 using xhci_hcd
+Oct 22 20:54:20.685413 <HOSTNAME> kernel: usb 3-5.1.1.1: New USB device found, idVendor=258a, idProduct=002f, bcdDevice= 6.09
+Oct 22 20:54:20.685463 <HOSTNAME> kernel: usb 3-5.1.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 20:54:20.685512 <HOSTNAME> kernel: usb 3-5.1.1.1: Product: 2.4G Dual Mode Mouse
+Oct 22 20:54:20.685557 <HOSTNAME> kernel: usb 3-5.1.1.1: Manufacturer: SINO WEALTH
+Oct 22 20:54:20.685562 <HOSTNAME> kernel: input: SINO WEALTH 2.4G Dual Mode Mouse as /devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5.1/3-5.1.1/3-5.1.1.1/3-5.1.1.1:1.0/0003:258A:002F.0004/input/input7
+Oct 22 20:54:20.685627 <HOSTNAME> kernel: hid-generic 0003:258A:002F.0004: input,hidraw3: USB HID v1.10 Mouse [SINO WEALTH 2.4G Dual Mode Mouse] on usb-0000:00:14.0-5.1.1.1/input0
+Oct 22 20:54:20.685633 <HOSTNAME> kernel: input: SINO WEALTH 2.4G Dual Mode Mouse Keyboard as /devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5.1/3-5.1.1/3-5.1.1.1/3-5.1.1.1:1.1/0003:258A:002F.0005/input/input8
+Oct 22 20:54:20.685698 <HOSTNAME> kernel: hid-generic 0003:258A:002F.0005: input,hiddev97,hidraw4: USB HID v1.10 Keyboard [SINO WEALTH 2.4G Dual Mode Mouse] on usb-0000:00:14.0-5.1.1.1/input1
+Oct 22 20:54:20.685773 <HOSTNAME> kernel: usb 3-5.1.1.3: new full-speed USB device number 14 using xhci_hcd
+Oct 22 20:54:20.685835 <HOSTNAME> kernel: usb 3-5.1.1.3: New USB device found, idVendor=05ac, idProduct=024f, bcdDevice= 1.07
+Oct 22 20:54:20.685892 <HOSTNAME> kernel: usb 3-5.1.1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 20:54:20.685948 <HOSTNAME> kernel: usb 3-5.1.1.3: Product: K1-Keyboard
+Oct 22 20:54:20.685998 <HOSTNAME> kernel: usb 3-5.1.1.3: Manufacturer: Keychron K1
+Oct 22 20:54:20.686066 <HOSTNAME> kernel: apple 0003:05AC:024F.0006: Non-apple keyboard detected; function keys will default to fnmode=2 behavior
+Oct 22 20:54:20.686071 <HOSTNAME> kernel: input: Keychron K1 K1-Keyboard as /devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5.1/3-5.1.1/3-5.1.1.3/3-5.1.1.3:1.0/0003:05AC:024F.0006/input/input10
+Oct 22 20:54:20.686130 <HOSTNAME> kernel: apple 0003:05AC:024F.0006: input,hidraw5: USB HID v1.11 Keyboard [Keychron K1 K1-Keyboard] on usb-0000:00:14.0-5.1.1.3/input0
+Oct 22 20:54:20.686193 <HOSTNAME> kernel: apple 0003:05AC:024F.0007: Fn key not found (Apple Wireless Keyboard clone?), disabling Fn key handling
+Oct 22 20:54:20.686256 <HOSTNAME> kernel: apple 0003:05AC:024F.0007: Non-apple keyboard detected; function keys will default to fnmode=2 behavior
+Oct 22 20:54:20.686261 <HOSTNAME> kernel: input: Keychron K1 K1-Keyboard as /devices/pci0000:00/0000:00:14.0/usb3/3-5/3-5.1/3-5.1.1/3-5.1.1.3/3-5.1.1.3:1.1/0003:05AC:024F.0007/input/input11
+Oct 22 20:54:20.686322 <HOSTNAME> kernel: apple 0003:05AC:024F.0007: input,hiddev98,hidraw6: USB HID v1.11 Keyboard [Keychron K1 K1-Keyboard] on usb-0000:00:14.0-5.1.1.3/input1
+Oct 22 20:54:20.686365 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] Selective fetch area calculation failed in pipe A
+Oct 22 20:54:20.686370 <HOSTNAME> kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct 22 20:54:20.686374 <HOSTNAME> kernel: device-mapper: uevent: version 1.0.3
+Oct 22 20:54:20.686378 <HOSTNAME> kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Oct 22 20:54:20.686423 <HOSTNAME> kernel: xe 0000:00:02.0: [drm] *ERROR* Tile0: GT1: GSC proxy component not bound!
+Oct 22 20:54:20.686429 <HOSTNAME> kernel: BTRFS: device label OMARCHY devid 1 transid 3609 /dev/mapper/omarchy_root (253:0) scanned by mount (593)
+Oct 22 20:54:20.686433 <HOSTNAME> kernel: BTRFS info (device dm-0): first mount of filesystem <UUID>
+Oct 22 20:54:20.686438 <HOSTNAME> kernel: BTRFS info (device dm-0): using crc32c checksum algorithm
+Oct 22 20:54:20.686441 <HOSTNAME> kernel: BTRFS info (device dm-0): enabling ssd optimizations
+Oct 22 20:54:20.686445 <HOSTNAME> kernel: BTRFS info (device dm-0): enabling free space tree
+Oct 22 20:54:20.686451 <HOSTNAME> systemd[1]: systemd 262-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+Oct 22 20:54:20.686457 <HOSTNAME> systemd[1]: Detected architecture x86-64.
+Oct 22 20:54:20.686462 <HOSTNAME> systemd[1]: Hostname set to <<HOSTNAME>>.
+Oct 22 20:54:20.686467 <HOSTNAME> systemd[1]: bpf-restrict-fs: LSM BPF program attached
+Oct 22 20:54:20.686471 <HOSTNAME> kernel: zram: Added device: zram0
+Oct 22 20:54:20.686475 <HOSTNAME> systemd[1]: Queued start job for default target Graphical Interface.
+Oct 22 20:54:20.686479 <HOSTNAME> systemd[1]: Created slice CUPS Slice.
+Oct 22 20:54:20.686484 <HOSTNAME> systemd[1]: Created slice Slice /system/dirmngr.
+Oct 22 20:54:20.686488 <HOSTNAME> systemd[1]: Created slice Slice /system/getty.
+Oct 22 20:54:20.686493 <HOSTNAME> systemd[1]: Created slice Slice /system/gpg-agent.
+Oct 22 20:54:20.686498 <HOSTNAME> systemd[1]: Created slice Slice /system/gpg-agent-browser.
+Oct 22 20:54:20.686502 <HOSTNAME> systemd[1]: Created slice Slice /system/gpg-agent-extra.
+Oct 22 20:54:20.686506 <HOSTNAME> systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+Oct 22 20:54:20.686510 <HOSTNAME> systemd[1]: Created slice Slice /system/keyboxd.
+Oct 22 20:54:20.686514 <HOSTNAME> systemd[1]: Created slice Slice /system/modprobe.
+Oct 22 20:54:20.686518 <HOSTNAME> systemd[1]: Created slice Slice /system/systemd-fsck.
+Oct 22 20:54:20.686523 <HOSTNAME> systemd[1]: Created slice Slice /system/systemd-zram-setup.
+Oct 22 20:54:20.686527 <HOSTNAME> systemd[1]: Created slice User and Session Slice.
+Oct 22 20:54:20.686532 <HOSTNAME> systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Oct 22 20:54:20.686536 <HOSTNAME> systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Oct 22 20:54:20.686541 <HOSTNAME> systemd[1]: Expecting device /dev/disk/by-uuid/<UUID>...
+Oct 22 20:54:20.686545 <HOSTNAME> systemd[1]: Expecting device /dev/disk/by-uuid/F018-3A12...
+Oct 22 20:54:20.686549 <HOSTNAME> systemd[1]: Expecting device /dev/zram0...
+Oct 22 20:54:20.686553 <HOSTNAME> systemd[1]: Reached target Local dm-clone Devices.
+Oct 22 20:54:20.686557 <HOSTNAME> systemd[1]: Reached target Login Prompts.
+Oct 22 20:54:20.686560 <HOSTNAME> systemd[1]: Reached target Image Downloads.
+Oct 22 20:54:20.686564 <HOSTNAME> systemd[1]: Reached target Local Integrity Protected Volumes.
+Oct 22 20:54:20.686569 <HOSTNAME> systemd[1]: Reached target Remote File Systems.
+Oct 22 20:54:20.686573 <HOSTNAME> systemd[1]: Reached target Slice Units.
+Oct 22 20:54:20.686577 <HOSTNAME> systemd[1]: Reached target Local Verity Protected Volumes.
+Oct 22 20:54:20.686582 <HOSTNAME> systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Oct 22 20:54:20.686586 <HOSTNAME> systemd[1]: Listening on Query the User Interactively for a Password.
+Oct 22 20:54:20.686590 <HOSTNAME> systemd[1]: Listening on Process Core Dump Socket.
+Oct 22 20:54:20.686594 <HOSTNAME> systemd[1]: Listening on Credential Encryption/Decryption.
+Oct 22 20:54:20.686598 <HOSTNAME> systemd[1]: Listening on Disk Encryption Enrollment Service Socket.
+Oct 22 20:54:20.686602 <HOSTNAME> systemd[1]: Listening on Factory Reset Management.
+Oct 22 20:54:20.686607 <HOSTNAME> systemd[1]: Listening on Hostname Service Socket.
+Oct 22 20:54:20.686611 <HOSTNAME> systemd[1]: Listening on Journal Socket (/dev/log).
+Oct 22 20:54:20.686615 <HOSTNAME> systemd[1]: Listening on Journal Sockets.
+Oct 22 20:54:20.686619 <HOSTNAME> systemd[1]: Listening on Console Output Muting Service Socket.
+Oct 22 20:54:20.686623 <HOSTNAME> systemd[1]: Listening on Userspace Out-Of-Memory (OOM) Killer Socket.
+Oct 22 20:54:20.686627 <HOSTNAME> systemd[1]: Listening on TPM PCR Measurements.
+Oct 22 20:54:20.686631 <HOSTNAME> systemd[1]: Listening on Make TPM PCR Policy.
+Oct 22 20:54:20.686636 <HOSTNAME> systemd[1]: Listening on Disk Repartitioning Service Socket.
+Oct 22 20:54:20.686640 <HOSTNAME> systemd[1]: Listening on Resolve Monitor Varlink Socket.
+Oct 22 20:54:20.686645 <HOSTNAME> systemd[1]: Listening on Resolve Service Varlink Socket.
+Oct 22 20:54:20.686649 <HOSTNAME> systemd[1]: Listening on Simple Block Device Backed Storage Provider.
+Oct 22 20:54:20.686653 <HOSTNAME> systemd[1]: Listening on Simple File System Backed Storage Provider.
+Oct 22 20:54:20.686657 <HOSTNAME> systemd[1]: Listening on System Install Tool.
+Oct 22 20:54:20.686661 <HOSTNAME> systemd[1]: Listening on System Updates.
+Oct 22 20:54:20.686665 <HOSTNAME> systemd[1]: Listening on udev Kernel Socket.
+Oct 22 20:54:20.686669 <HOSTNAME> systemd[1]: Listening on udev Varlink Socket.
+Oct 22 20:54:20.686674 <HOSTNAME> systemd[1]: Listening on User Database Manager Socket.
+Oct 22 20:54:20.686679 <HOSTNAME> systemd[1]: Mounting Huge Pages File System...
+Oct 22 20:54:20.686683 <HOSTNAME> systemd[1]: Mounting POSIX Message Queue File System...
+Oct 22 20:54:20.686687 <HOSTNAME> systemd[1]: Mounting Kernel Debug File System...
+Oct 22 20:54:20.686691 <HOSTNAME> systemd[1]: Mounting Kernel Trace File System...
+Oct 22 20:54:20.686695 <HOSTNAME> systemd[1]: Starting Create List of Static Device Nodes...
+Oct 22 20:54:20.686699 <HOSTNAME> systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+Oct 22 20:54:20.686703 <HOSTNAME> systemd[1]: Mounting Kernel Configuration File System...
+Oct 22 20:54:20.686708 <HOSTNAME> systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+Oct 22 20:54:20.686713 <HOSTNAME> systemd[1]: Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+Oct 22 20:54:20.686719 <HOSTNAME> systemd[1]: Mounting FUSE Control File System...
+Oct 22 20:54:20.686723 <HOSTNAME> systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-<UUID>
+Oct 22 20:54:20.686727 <HOSTNAME> systemd[1]: Starting Journal Service...
+Oct 22 20:54:20.686732 <HOSTNAME> systemd[1]: Starting Load Kernel Modules...
+Oct 22 20:54:20.686736 <HOSTNAME> systemd[1]: Starting TPM PCR Machine ID Measurement...
+Oct 22 20:54:20.686741 <HOSTNAME> systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+Oct 22 20:54:20.686746 <HOSTNAME> systemd[1]: Starting Remount Root and Kernel File Systems...
+Oct 22 20:54:20.686751 <HOSTNAME> systemd[1]: Starting Early TPM SRK Setup...
+Oct 22 20:54:20.686755 <HOSTNAME> systemd[1]: Starting Load udev Rules from Credentials...
+Oct 22 20:54:20.686759 <HOSTNAME> systemd[1]: Starting Coldplug All udev Devices...
+Oct 22 20:54:20.686763 <HOSTNAME> systemd[1]: Starting Virtual Console Setup...
+Oct 22 20:54:20.686767 <HOSTNAME> systemd[1]: Mounted Huge Pages File System.
+Oct 22 20:54:20.686771 <HOSTNAME> systemd[1]: Mounted POSIX Message Queue File System.
+Oct 22 20:54:20.686775 <HOSTNAME> systemd[1]: Mounted Kernel Debug File System.
+Oct 22 20:54:20.686779 <HOSTNAME> systemd[1]: Mounted Kernel Trace File System.
+Oct 22 20:54:20.686783 <HOSTNAME> systemd[1]: Finished Create List of Static Device Nodes.
+Oct 22 20:54:20.686788 <HOSTNAME> systemd[1]: Mounted Kernel Configuration File System.
+Oct 22 20:54:20.686792 <HOSTNAME> systemd[1]: Mounted FUSE Control File System.
+Oct 22 20:54:20.686796 <HOSTNAME> kernel: i2c_dev: i2c /dev entries driver
+Oct 22 20:54:20.686800 <HOSTNAME> systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+Oct 22 20:54:20.686804 <HOSTNAME> systemd[1]: Finished Load Kernel Modules.
+Oct 22 20:54:20.686808 <HOSTNAME> systemd[1]: Starting Apply Kernel Variables...
+Oct 22 20:54:20.686834 <HOSTNAME> systemd-journald[701]: Collecting audit messages is disabled.
+Oct 22 20:54:20.686849 <HOSTNAME> systemd[1]: Finished Load udev Rules from Credentials.
+Oct 22 20:54:20.686853 <HOSTNAME> systemd[1]: Finished TPM PCR Machine ID Measurement.
+Oct 22 20:54:20.686858 <HOSTNAME> systemd[1]: Finished Virtual Console Setup.
+Oct 22 20:54:20.686862 <HOSTNAME> kernel: BTRFS info (device dm-0 state M): use zstd compression, level 3
+Oct 22 20:54:20.686867 <HOSTNAME> systemd[1]: Finished Remount Root and Kernel File Systems.
+Oct 22 20:54:20.686871 <HOSTNAME> systemd[1]: Activating swap /swap/swapfile...
+Oct 22 20:54:20.686877 <HOSTNAME> systemd[1]: Rebuild Hardware Database skipped, unmet condition check ConditionNeedsUpdate=/etc
+Oct 22 20:54:20.686881 <HOSTNAME> systemd[1]: Starting Load/Save OS Random Seed...
+Oct 22 20:54:20.686885 <HOSTNAME> systemd[1]: Finished Apply Kernel Variables.
+Oct 22 20:54:20.686889 <HOSTNAME> systemd[1]: Starting CLI Netfilter Manager...
+Oct 22 20:54:20.686893 <HOSTNAME> systemd[1]: Starting User Database Manager...
+Oct 22 20:54:20.686898 <HOSTNAME> kernel: BTRFS info (device dm-0): swapfile activated on root 267 ino 257, pinned down 67645734912 bytes from 63 block group(s)
+Oct 22 20:54:20.686902 <HOSTNAME> kernel: BTRFS warning (device dm-0): block groups with swapfile extents will not be scrubbed or balanced
+Oct 22 20:54:20.686906 <HOSTNAME> kernel: Adding 65296924k swap on /swap/swapfile.  Priority:0 extents:1 across:65296924k SS
+Oct 22 20:54:20.686910 <HOSTNAME> systemd[1]: Activated swap /swap/swapfile.
+Oct 22 20:54:20.686915 <HOSTNAME> systemd[1]: Finished Load/Save OS Random Seed.
+Oct 22 20:54:20.686920 <HOSTNAME> systemd[1]: systemd-tpm2-setup-early.service: Main process exited, code=exited, status=1/FAILURE
+Oct 22 20:54:20.686924 <HOSTNAME> systemd[1]: systemd-tpm2-setup-early.service: Failed with result 'exit-code'.
+Oct 22 20:54:20.687724 <HOSTNAME> systemd[1]: Failed to start Early TPM SRK Setup.
+Oct 22 20:54:20.687732 <HOSTNAME> systemd[1]: Started Journal Service.
+Oct 22 20:54:20.841748 <HOSTNAME> kernel: zram0: detected capacity change from 0 to 130592768
+Oct 22 20:54:20.862732 <HOSTNAME> kernel: resource: resource sanity check: requesting [mem 0x00000000fedc0000-0x00000000feddffff], which spans more than PNP0C02:03 [mem 0xfedc0000-0xfedc7fff]
+Oct 22 20:54:20.862787 <HOSTNAME> kernel: caller igen6_probe+0xfc/0x1010 [igen6_edac] mapping multiple BARs
+Oct 22 20:54:20.862798 <HOSTNAME> kernel: resource: resource sanity check: requesting [mem 0x00000000fedc0000-0x00000000fedcffff], which spans more than PNP0C02:03 [mem 0xfedc0000-0xfedc7fff]
+Oct 22 20:54:20.862807 <HOSTNAME> kernel: caller igen6_probe+0x276/0x1010 [igen6_edac] mapping multiple BARs
+Oct 22 20:54:20.868731 <HOSTNAME> kernel: EDAC MC0: Giving out device to module igen6_edac controller Intel_client_SoC MC#0: DEV 0000:00:00.0 (INTERRUPT)
+Oct 22 20:54:20.873742 <HOSTNAME> kernel: intel_vpu 0000:00:0b.0: [drm] Firmware: intel/vpu/vpu_50xx_v1.bin, version: Aug 20 2026*NPU50xx*build/ci/npu-fw-ci-ci_branch_UD202638_npu_release_26ww32-20260813_185051-3a5e4dd1cf93522baa79e55a53f2ac7165723cad-1-g6fc835a1920*6fc835a192052ac2261c4e1d5da7379ced95ae81
+Oct 22 20:54:20.875672 <HOSTNAME> kernel: intel_vpu 0000:00:0b.0: [drm] Scheduler mode: HW
+Oct 22 20:54:20.876339 <HOSTNAME> kernel: EDAC MC1: Giving out device to module igen6_edac controller Intel_client_SoC MC#1: DEV 0000:00:00.0 (INTERRUPT)
+Oct 22 20:54:20.876372 <HOSTNAME> kernel: EDAC igen6: v2.5.1
+Oct 22 20:54:20.878746 <HOSTNAME> kernel: cros_ec_lpcs FRMWC004:00: loaded with quirks 00000001
+Oct 22 20:54:20.892750 <HOSTNAME> kernel: cros_ec_lpcs FRMWC004:00: Chrome EC device registered
+Oct 22 20:54:20.909746 <HOSTNAME> kernel: usbcore: registered new device driver apple-mfi-fastcharge
+Oct 22 20:54:20.943731 <HOSTNAME> kernel: mousedev: PS/2 mouse device common for all mice
+Oct 22 20:54:20.956725 <HOSTNAME> kernel: mc: Linux media interface: v0.10
+Oct 22 20:54:20.969725 <HOSTNAME> kernel: [drm] Initialized intel_vpu 1.0.0 for 0000:00:0b.0 on minor 0
+Oct 22 20:54:20.973723 <HOSTNAME> kernel: intel_pmc_core INT33A1:00:  initialized
+Oct 22 20:54:20.976751 <HOSTNAME> kernel: input: PC Speaker as /devices/platform/pcspkr/input/input12
+Oct 22 20:54:21.075728 <HOSTNAME> kernel: hid-generic 0018:32AC:001B.0008: hidraw7: I2C HID v1.00 Device [FRMW0005:00 32AC:001B] on i2c-FRMW0005:00
+Oct 22 20:54:21.077724 <HOSTNAME> kernel: input: FRMW0004:00 32AC:0006 Wireless Radio Control as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-FRMW0004:00/0018:32AC:0006.0009/input/input14
+Oct 22 20:54:21.077753 <HOSTNAME> kernel: input: FRMW0004:00 32AC:0006 Consumer Control as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-FRMW0004:00/0018:32AC:0006.0009/input/input15
+Oct 22 20:54:21.077763 <HOSTNAME> kernel: hid-generic 0018:32AC:0006.0009: input,hidraw8: I2C HID v1.00 Device [FRMW0004:00 32AC:0006] on i2c-FRMW0004:00
+Oct 22 20:54:21.083732 <HOSTNAME> kernel: input: PIXA3854:00 093A:1343 Mouse as /devices/pci0000:00/0000:00:19.1/i2c_designware.5/i2c-5/i2c-PIXA3854:00/0018:093A:1343.000A/input/input16
+Oct 22 20:54:21.083765 <HOSTNAME> kernel: input: PIXA3854:00 093A:1343 Touchpad as /devices/pci0000:00/0000:00:19.1/i2c_designware.5/i2c-5/i2c-PIXA3854:00/0018:093A:1343.000A/input/input17
+Oct 22 20:54:21.083774 <HOSTNAME> kernel: hid-generic 0018:093A:1343.000A: input,hidraw9: I2C HID v1.00 Mouse [PIXA3854:00 093A:1343] on i2c-PIXA3854:00
+Oct 22 20:54:21.086732 <HOSTNAME> kernel: nvidia: loading out-of-tree module taints kernel.
+Oct 22 20:54:21.086756 <HOSTNAME> kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Oct 22 20:54:21.099729 <HOSTNAME> kernel: input: CSW1322:00 3558:14FD Touchscreen as /devices/pci0000:00/0000:00:19.0/i2c_designware.4/i2c-4/i2c-CSW1322:00/0018:3558:14FD.000B/input/input18
+Oct 22 20:54:21.099758 <HOSTNAME> kernel: hid-generic 0018:3558:14FD.000B: input,hidraw10: I2C HID v1.00 Device [CSW1322:00 3558:14FD] on i2c-CSW1322:00
+Oct 22 20:54:21.108729 <HOSTNAME> kernel: spi-nor spi0.0: supply vcc not found, using dummy regulator
+Oct 22 20:54:21.114728 <HOSTNAME> kernel: videodev: Linux video capture interface: v2.00
+Oct 22 20:54:21.114759 <HOSTNAME> kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 511
+Oct 22 20:54:21.115804 <HOSTNAME> kernel: 
+Oct 22 20:54:21.115824 <HOSTNAME> kernel: Creating 1 MTD partitions on "0000:00:1f.5":
+Oct 22 20:54:21.115835 <HOSTNAME> kernel: 0x000000000000-0x000002000000 : "BIOS"
+Oct 22 20:54:21.115947 <HOSTNAME> kernel: i801_smbus 0000:00:1f.4: SPD Write Disable is set
+Oct 22 20:54:21.116176 <HOSTNAME> kernel: i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+Oct 22 20:54:21.120729 <HOSTNAME> kernel: nvidia 0000:2e:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+Oct 22 20:54:21.122384 <HOSTNAME> kernel: i2c i2c-20: Successfully instantiated SPD at 0x50
+Oct 22 20:54:21.125729 <HOSTNAME> kernel: Bluetooth: Core ver 2.22
+Oct 22 20:54:21.125773 <HOSTNAME> kernel: NET: Registered PF_BLUETOOTH protocol family
+Oct 22 20:54:21.125786 <HOSTNAME> kernel: Bluetooth: HCI device and connection manager initialized
+Oct 22 20:54:21.125797 <HOSTNAME> kernel: Bluetooth: HCI socket layer initialized
+Oct 22 20:54:21.125807 <HOSTNAME> kernel: Bluetooth: L2CAP socket layer initialized
+Oct 22 20:54:21.125817 <HOSTNAME> kernel: Bluetooth: SCO socket layer initialized
+Oct 22 20:54:21.125826 <HOSTNAME> kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Oct 22 20:54:21.125837 <HOSTNAME> kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Oct 22 20:54:21.125852 <HOSTNAME> kernel: hid-sensor-hub 0018:32AC:001B.0008: hidraw7: I2C HID v1.00 Device [FRMW0005:00 32AC:001B] on i2c-FRMW0005:00
+Oct 22 20:54:21.126053 <HOSTNAME> kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Oct 22 20:54:21.129732 <HOSTNAME> kernel: mei_gsc_proxy 0000:00:16.0-<UUID>: bound 0000:00:02.0 (ops xe_gsc_proxy_component_ops [xe])
+Oct 22 20:54:21.167765 <HOSTNAME> kernel: input: CSW1322:00 3558:14FD as /devices/pci0000:00/0000:00:19.0/i2c_designware.4/i2c-4/i2c-CSW1322:00/0018:3558:14FD.000B/input/input19
+Oct 22 20:54:21.349948 <HOSTNAME> kernel: hid-multitouch 0018:3558:14FD.000B: input,hidraw9: I2C HID v1.00 Device [CSW1322:00 3558:14FD] on i2c-CSW1322:00
+Oct 22 20:54:21.358771 <HOSTNAME> kernel: input: PIXA3854:00 093A:1343 Mouse as /devices/pci0000:00/0000:00:19.1/i2c_designware.5/i2c-5/i2c-PIXA3854:00/0018:093A:1343.000A/input/input20
+Oct 22 20:54:21.359770 <HOSTNAME> kernel: input: PIXA3854:00 093A:1343 Touchpad as /devices/pci0000:00/0000:00:19.1/i2c_designware.5/i2c-5/i2c-PIXA3854:00/0018:093A:1343.000A/input/input21
+Oct 22 20:54:21.359844 <HOSTNAME> kernel: hid-multitouch 0018:093A:1343.000A: input,hidraw10: I2C HID v1.00 Mouse [PIXA3854:00 093A:1343] on i2c-PIXA3854:00
+Oct 22 20:54:21.741075 <HOSTNAME> systemd-journald[701]: Received client request to flush runtime journal.
+Oct 22 20:54:21.781724 <HOSTNAME> kernel: Adding 65296380k swap on /dev/zram0.  Priority:100 extents:1 across:65296380k SSDsc
+Oct 22 20:54:21.845748 <HOSTNAME> kernel: ax88179_178a 3-5.1.4.4:1.0 eth0: register 'ax88179_178a' at usb-0000:00:14.0-5.1.4.4, ASIX AX88179 USB 3.0 Gigabit Ethernet, <MAC>
+Oct 22 20:54:21.845987 <HOSTNAME> kernel: usbcore: registered new interface driver ax88179_178a
+Oct 22 20:54:22.291793 <HOSTNAME> kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input13
+Oct 22 20:54:22.306875 <HOSTNAME> kernel: ucsi_acpi USBC000:00: unknown error 256
+Oct 22 20:54:22.307037 <HOSTNAME> kernel: ucsi_acpi USBC000:00: GET_CABLE_PROPERTY failed (-5)
+Oct 22 20:54:22.470804 <HOSTNAME> kernel: ucsi_acpi USBC000:00: unknown error 256
+Oct 22 20:54:22.470999 <HOSTNAME> kernel: ucsi_acpi USBC000:00: con3: failed to register partner alt modes (-5)
+Oct 22 20:54:22.795780 <HOSTNAME> kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  615.78.08  Release Build  (root@<HOSTNAME>)  
+Oct 22 20:54:22.820756 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain package
+Oct 22 20:54:22.820848 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain dram
+Oct 22 20:54:22.824742 <HOSTNAME> kernel: proc_thermal_pci 0000:00:04.0: msi enabled:1 msix enabled:0
+Oct 22 20:54:22.827734 <HOSTNAME> kernel: iTCO_wdt iTCO_wdt: Found a Intel PCH TCO device (Version=6, TCOBASE=0x0400)
+Oct 22 20:54:22.828106 <HOSTNAME> kernel: iTCO_wdt iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+Oct 22 20:54:22.828320 <HOSTNAME> kernel: spd5118 20-0050: DDR5 temperature sensor: vendor 0x00:0xb3 revision 2.2
+Oct 22 20:54:22.828559 <HOSTNAME> kernel: cros-charge-control cros-charge-control.5.auto: Framework charge control detected, preventing load
+Oct 22 20:54:22.842773 <HOSTNAME> kernel: iwlwifi 0000:00:14.3: Detected crf-id 0x1002a10, cnv-id 0x80a00 wfpm id 0x80005b20
+Oct 22 20:54:22.843015 <HOSTNAME> kernel: iwlwifi 0000:00:14.3: PCI dev e440/0114, rev=0x480, rfid=0x20113100
+Oct 22 20:54:22.843123 <HOSTNAME> kernel: iwlwifi 0000:00:14.3: Detected Intel(R) Wi-Fi 7 BE211 320MHz
+Oct 22 20:54:22.849728 <HOSTNAME> kernel: iwlwifi 0000:00:14.3: loaded firmware version 106.c88d33af.0 sc-a0-wh-b0-c106.ucode op_mode iwlmld
+Oct 22 20:54:22.880727 <HOSTNAME> kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  615.78.08  Release Build  (root@<HOSTNAME>)  
+Oct 22 20:54:22.883814 <HOSTNAME> kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 22 20:54:22.883899 <HOSTNAME> kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 22 20:54:22.891735 <HOSTNAME> kernel: [drm] [nvidia-drm] [GPU ID 0x00002e00] Loading driver
+Oct 22 20:54:22.891841 <HOSTNAME> kernel: PTP clock support registered
+Oct 22 20:54:22.919758 <HOSTNAME> kernel: uvcvideo 3-6:1.0: Found UVC 1.50 device Laptop Webcam Module (2nd Gen) (32ac:001c)
+Oct 22 20:54:22.927733 <HOSTNAME> kernel: snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+Oct 22 20:54:22.928265 <HOSTNAME> kernel: snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops intel_audio_component_bind_ops [xe])
+Oct 22 20:54:22.928574 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1: enabling device (0000 -> 0002)
+Oct 22 20:54:22.929074 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1: Disabling MSI
+Oct 22 20:54:22.929396 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1: Handle vga_switcheroo audio client
+Oct 22 20:54:22.936791 <HOSTNAME> kernel: zswap: loaded using pool zstd
+Oct 22 20:54:22.939731 <HOSTNAME> kernel: usbcore: registered new interface driver uvcvideo
+Oct 22 20:54:22.954748 <HOSTNAME> kernel: usbcore: registered new interface driver snd-usb-audio
+Oct 22 20:54:22.959735 <HOSTNAME> kernel: Bluetooth: hci0: Device revision is 0
+Oct 22 20:54:22.959795 <HOSTNAME> kernel: Bluetooth: hci0: Secure boot is enabled
+Oct 22 20:54:22.959836 <HOSTNAME> kernel: Bluetooth: hci0: OTP lock is disabled
+Oct 22 20:54:22.959871 <HOSTNAME> kernel: Bluetooth: hci0: API lock is enabled
+Oct 22 20:54:22.959910 <HOSTNAME> kernel: Bluetooth: hci0: Debug lock is disabled
+Oct 22 20:54:22.959941 <HOSTNAME> kernel: Bluetooth: hci0: Minimum firmware build 1 week 10 2014
+Oct 22 20:54:22.959984 <HOSTNAME> kernel: Bluetooth: hci0: Bootloader timestamp 2023.43 buildtype 1 build 11631
+Oct 22 20:54:22.960733 <HOSTNAME> kernel: Bluetooth: hci0: Found device firmware: intel/ibt-00a0-01a1-iml.sfi
+Oct 22 20:54:22.960767 <HOSTNAME> kernel: Bluetooth: hci0: Boot Address: 0xb02ff000
+Oct 22 20:54:22.960798 <HOSTNAME> kernel: Bluetooth: hci0: Firmware Version: 214-29.26
+Oct 22 20:54:22.993774 <HOSTNAME> kernel: intel_tcc_cooling: TCC Offset locked
+Oct 22 20:54:22.999729 <HOSTNAME> kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:07.1/0000:2c:00.0/0000:2d:00.0/0000:2e:00.1/sound/card2/input22
+Oct 22 20:54:23.000726 <HOSTNAME> kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:07.1/0000:2c:00.0/0000:2d:00.0/0000:2e:00.1/sound/card2/input23
+Oct 22 20:54:23.000761 <HOSTNAME> kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:07.1/0000:2c:00.0/0000:2d:00.0/0000:2e:00.1/sound/card2/input24
+Oct 22 20:54:23.000783 <HOSTNAME> kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:07.1/0000:2c:00.0/0000:2d:00.0/0000:2e:00.1/sound/card2/input25
+Oct 22 20:54:23.000809 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0: ALC285: picked fixup  for PCI SSID f111:000f
+Oct 22 20:54:23.001047 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0: autoconfig for ALC285: line_outs=1 (0x17/0x0/0x0/0x0/0x0) type:speaker
+Oct 22 20:54:23.001172 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Oct 22 20:54:23.001286 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+Oct 22 20:54:23.001393 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0:    mono: mono_out=0x0
+Oct 22 20:54:23.001509 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0:    inputs:
+Oct 22 20:54:23.001611 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0:      Internal Mic=0x12
+Oct 22 20:54:23.001745 <HOSTNAME> kernel: snd_hda_codec_alc269 hdaudioC1D0:      Headset Mic=0x19
+Oct 22 20:54:23.003740 <HOSTNAME> kernel: Bluetooth: hci0: Waiting for firmware download to complete
+Oct 22 20:54:23.003842 <HOSTNAME> kernel: Bluetooth: hci0: Firmware loaded in 42191 usecs
+Oct 22 20:54:23.005732 <HOSTNAME> kernel: Bluetooth: hci0: Received gp1 mailbox interrupt
+Oct 22 20:54:23.005800 <HOSTNAME> kernel: Bluetooth: hci0: Waiting for device to boot
+Oct 22 20:54:23.005827 <HOSTNAME> kernel: Bluetooth: hci0: Received gp1 mailbox interrupt
+Oct 22 20:54:23.005845 <HOSTNAME> kernel: Bluetooth: hci0: Device booted in 1553 usecs
+Oct 22 20:54:23.005869 <HOSTNAME> kernel: Bluetooth: hci0: Waiting for device transition to d0
+Oct 22 20:54:23.005896 <HOSTNAME> kernel: Bluetooth: hci0: Device moved to D0 in 2 usecs
+Oct 22 20:54:23.005920 <HOSTNAME> kernel: Bluetooth: hci0: Received gp1 mailbox interrupt
+Oct 22 20:54:23.005941 <HOSTNAME> kernel: Bluetooth: hci0: dsbr: enable: 0x01 value: 0x0f
+Oct 22 20:54:23.011729 <HOSTNAME> kernel: Bluetooth: hci0: Found device firmware: intel/ibt-00a0-01a1-pci.sfi
+Oct 22 20:54:23.011765 <HOSTNAME> kernel: Bluetooth: hci0: Boot Address: 0x10000800
+Oct 22 20:54:23.011790 <HOSTNAME> kernel: Bluetooth: hci0: Firmware Version: 214-29.26
+Oct 22 20:54:23.032730 <HOSTNAME> kernel: Bluetooth: hci0: Received gp1 mailbox interrupt
+Oct 22 20:54:23.032789 <HOSTNAME> kernel: Bluetooth: hci0: Controller device warning (boot_stage: 0xa0db1003)
+Oct 22 20:54:23.035727 <HOSTNAME> kernel: intel_rapl_msr: PL4 support detected (updated).
+Oct 22 20:54:23.035746 <HOSTNAME> kernel: intel_rapl_msr: MSR-based RAPL PMU support enabled (updated)
+Oct 22 20:54:23.035770 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain package
+Oct 22 20:54:23.035791 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain core
+Oct 22 20:54:23.035812 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain uncore
+Oct 22 20:54:23.035827 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain dram
+Oct 22 20:54:23.035845 <HOSTNAME> kernel: intel_rapl_common: Found RAPL domain psys
+Oct 22 20:54:23.243739 <HOSTNAME> kernel: [drm] Initialized nvidia-drm 0.0.0 for 0000:2e:00.0 on minor 1
+Oct 22 20:54:23.368770 <HOSTNAME> kernel: iwlwifi 0000:00:14.3: Detected RF WH, rfid=0x20113100
+Oct 22 20:54:23.442829 <HOSTNAME> kernel: Bluetooth: hci0: Waiting for firmware download to complete
+Oct 22 20:54:23.442857 <HOSTNAME> kernel: Bluetooth: hci0: Firmware loaded in 420559 usecs
+Oct 22 20:54:23.474792 <HOSTNAME> kernel: iwlwifi 0000:00:14.3: base HW address: <MAC>
+Oct 22 20:54:23.488769 <HOSTNAME> kernel: Bluetooth: hci0: Received gp1 mailbox interrupt
+Oct 22 20:54:23.488798 <HOSTNAME> kernel: Bluetooth: hci0: Controller device warning (boot_stage: 0xa0db100f)
+Oct 22 20:54:23.488814 <HOSTNAME> kernel: Bluetooth: hci0: Controller device warning (boot_stage: 0xa0db100f)
+Oct 22 20:54:23.488825 <HOSTNAME> kernel: Bluetooth: hci0: Waiting for device to boot
+Oct 22 20:54:23.488837 <HOSTNAME> kernel: Bluetooth: hci0: Device booted in 45420 usecs
+Oct 22 20:54:23.488853 <HOSTNAME> kernel: Bluetooth: hci0: Waiting for device transition to d0
+Oct 22 20:54:23.488862 <HOSTNAME> kernel: Bluetooth: hci0: Controller device warning (boot_stage: 0xa0db1007)
+Oct 22 20:54:23.488873 <HOSTNAME> kernel: Bluetooth: hci0: Device moved to D0 in 38 usecs
+Oct 22 20:54:23.488881 <HOSTNAME> kernel: Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-00a0-01a1-pci.ddc
+Oct 22 20:54:23.488889 <HOSTNAME> kernel: Bluetooth: hci0: Malformed DDC record (plen=11, remaining=1)
+Oct 22 20:54:23.488898 <HOSTNAME> kernel: Bluetooth: hci0: Firmware timestamp 2026.29 buildtype 1 build 96982
+Oct 22 20:54:23.488907 <HOSTNAME> kernel: Bluetooth: hci0: Firmware SHA1: 0x239ed887
+Oct 22 20:54:23.489789 <HOSTNAME> kernel: Bluetooth: hci0: Fseq status: Success (0x00)
+Oct 22 20:54:23.489815 <HOSTNAME> kernel: Bluetooth: hci0: Fseq executed: 00.106.00.03
+Oct 22 20:54:23.489829 <HOSTNAME> kernel: Bluetooth: hci0: Fseq BT Top: 00.87.00.03
+Oct 22 20:54:23.496785 <HOSTNAME> kernel: ucsi_acpi USBC000:00: unknown error 256
+Oct 22 20:54:23.496925 <HOSTNAME> kernel: ucsi_acpi USBC000:00: con3: failed to register partner alt modes (-5)
+Oct 22 20:54:23.521749 <HOSTNAME> kernel: Bluetooth: hci0: Controller device warning (boot_stage: 0xa0db1047)
+Oct 22 20:54:23.536726 <HOSTNAME> kernel: fbcon: Deferring console take-over
+Oct 22 20:54:23.536767 <HOSTNAME> kernel: nvidia 0000:2e:00.0: [drm] fb1: nvidia-drmdrmfb frame buffer device
+Oct 22 20:54:23.544765 <HOSTNAME> kernel: iwlwifi 0000:00:14.3 wlp0s20f3: renamed from wlan0
+Oct 22 20:54:23.836874 <HOSTNAME> kernel: input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card1/input26
+Oct 22 20:54:23.840629 <HOSTNAME> kernel: input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card1/input27
+Oct 22 20:54:23.840649 <HOSTNAME> kernel: input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card1/input28
+Oct 22 20:54:23.840661 <HOSTNAME> kernel: input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card1/input29
+Oct 22 20:54:23.840672 <HOSTNAME> kernel: input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card1/input30
+Oct 22 20:54:23.965727 <HOSTNAME> kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Oct 22 20:54:23.965770 <HOSTNAME> kernel: Bluetooth: BNEP filters: protocol multicast
+Oct 22 20:54:23.965783 <HOSTNAME> kernel: Bluetooth: BNEP socket layer initialized
+Oct 22 20:54:23.966726 <HOSTNAME> kernel: Bluetooth: MGMT ver 1.23
+Oct 22 20:54:23.971736 <HOSTNAME> kernel: NET: Registered PF_ALG protocol family
+Oct 22 20:54:24.307721 <HOSTNAME> kernel: Consider using thermal netlink events interface
+Oct 22 20:54:25.068781 <HOSTNAME> kernel: ax88179_178a 3-5.1.4.4:1.0 eth0: ax88179 - Link status is: 1
+Oct 22 20:54:29.230824 <HOSTNAME> kernel: wlp0s20f3: authenticate with <MAC> (local address=<MAC>)
+Oct 22 20:54:29.231833 <HOSTNAME> kernel: wlp0s20f3: send auth to <MAC> (try 1/3)
+Oct 22 20:54:29.237837 <HOSTNAME> kernel: wlp0s20f3: authenticated
+Oct 22 20:54:29.237875 <HOSTNAME> kernel: wlp0s20f3: associate with <MAC> (try 1/3)
+Oct 22 20:54:29.241824 <HOSTNAME> kernel: wlp0s20f3: RX AssocResp from <MAC> (capab=0x1111 status=0 aid=5)
+Oct 22 20:54:29.243757 <HOSTNAME> kernel: wlp0s20f3: associated
+Oct 22 20:54:29.250828 <HOSTNAME> kernel: wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by <MAC>
+Oct 22 20:54:30.761730 <HOSTNAME> kernel: Bluetooth: RFCOMM TTY layer initialized
+Oct 22 20:54:30.761795 <HOSTNAME> kernel: Bluetooth: RFCOMM socket layer initialized
+Oct 22 20:54:30.761810 <HOSTNAME> kernel: Bluetooth: RFCOMM ver 1.11
+Oct 22 20:54:31.562741 <HOSTNAME> kernel: block nvme0n1: No UUID available providing old NGUID
+Oct 22 21:00:20.611558 <HOSTNAME> kernel: pcieport 0000:00:07.1: AER: Correctable error message received from 0000:2e:00.0
+Oct 22 21:00:20.645107 <HOSTNAME> kernel: nvidia 0000:2e:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 22 21:00:20.645302 <HOSTNAME> kernel: nvidia 0000:2e:00.0:   device [10de:2c05] error status/mask=00000001/0000e000
+Oct 22 21:00:20.645412 <HOSTNAME> kernel: nvidia 0000:2e:00.0:    [ 0] RxErr                  (First)
+Oct 22 21:05:24.313499 <HOSTNAME> kernel: warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+Oct 22 21:06:38.142892 <HOSTNAME> kernel: pcieport 0000:00:07.1: AER: Multiple Correctable error message received from 0000:2e:00.0
+Oct 22 21:06:38.157976 <HOSTNAME> kernel: nvidia 0000:2e:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 22 21:06:38.158299 <HOSTNAME> kernel: nvidia 0000:2e:00.0:   device [10de:2c05] error status/mask=00000041/0000e000
+Oct 22 21:06:38.158424 <HOSTNAME> kernel: nvidia 0000:2e:00.0:    [ 0] RxErr                  (First)
+Oct 22 21:06:38.158549 <HOSTNAME> kernel: nvidia 0000:2e:00.0:    [ 6] BadTLP                
+Oct 22 21:06:38.158648 <HOSTNAME> kernel: nvidia 0000:2e:00.0: AER:   Error of this Agent is reported first
+Oct 22 21:06:38.158762 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 22 21:06:38.158899 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1:   device [10de:22e9] error status/mask=00000041/0000e000
+Oct 22 21:06:38.159000 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1:    [ 0] RxErr                  (First)
+Oct 22 21:06:38.159088 <HOSTNAME> kernel: snd_hda_intel 0000:2e:00.1:    [ 6] BadTLP                
+Oct 22 21:07:56.394581 <HOSTNAME> kernel: x86/split lock detection: #AC: CHTTPClientThre/34266 took a split_lock trap at address: 0x56fba9ff
+Oct 22 21:07:56.452534 <HOSTNAME> kernel: x86/split lock detection: #AC: steam/34263 took a split_lock trap at address: 0xf517345f
+Oct 22 21:08:01.098575 <HOSTNAME> kernel: x86/split lock detection: #AC: steam/34260 took a split_lock trap at address: 0xf2ac66bf
+Oct 22 21:08:01.802493 <HOSTNAME> kernel: x86/split lock detection: #AC: CHTTPClientThre/34507 took a split_lock trap at address: 0xf2ac66bf
+Oct 22 21:08:04.216704 <HOSTNAME> kernel: x86/split lock detection: #AC: CJobMgr::m_Work/34838 took a split_lock trap at address: 0xedcf145f
+Oct 22 21:08:10.566548 <HOSTNAME> kernel: x86/split lock detection: #AC: CHTTPClientThre/35582 took a split_lock trap at address: 0xf2ac66bf
+Oct 22 21:08:12.159739 <HOSTNAME> kernel: x86/split lock detection: #AC: CHTTPClientThre/35638 took a split_lock trap at address: 0xf2ac66bf
+Oct 22 21:08:13.986503 <HOSTNAME> kernel: x86/split lock detection: #AC: CHTTPClientThre/35700 took a split_lock trap at address: 0xf2ac66bf
+Oct 22 21:12:02.116554 <HOSTNAME> kernel: pcieport 0000:00:07.1: AER: Correctable error message received from 0000:2e:00.0
+Oct 22 21:12:02.149320 <HOSTNAME> kernel: nvidia 0000:2e:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 22 21:12:02.149495 <HOSTNAME> kernel: nvidia 0000:2e:00.0:   device [10de:2c05] error status/mask=00000001/0000e000
+Oct 22 21:12:02.149597 <HOSTNAME> kernel: nvidia 0000:2e:00.0:    [ 0] RxErr                  (First)
+Oct 22 21:13:53.345867 <HOSTNAME> kernel: pcieport 0000:00:07.1: AER: Correctable error message received from 0000:2e:00.0
+Oct 22 21:13:53.379501 <HOSTNAME> kernel: nvidia 0000:2e:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 22 21:13:53.379816 <HOSTNAME> kernel: nvidia 0000:2e:00.0:   device [10de:2c05] error status/mask=00000001/0000e000
+Oct 22 21:13:53.379922 <HOSTNAME> kernel: nvidia 0000:2e:00.0:    [ 0] RxErr                  (First)
+Oct 22 21:14:13.228850 <HOSTNAME> kernel: pcieport 0000:00:07.1: AER: Correctable error message received from 0000:2e:00.0
+Oct 22 21:14:13.244646 <HOSTNAME> kernel: nvidia 0000:2e:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Oct 22 21:14:13.244954 <HOSTNAME> kernel: nvidia 0000:2e:00.0:   device [10de:2c05] error status/mask=00000001/0000e000
+Oct 22 21:14:13.245063 <HOSTNAME> kernel: nvidia 0000:2e:00.0:    [ 0] RxErr                  (First)
+Oct 22 21:14:19.118497 <HOSTNAME> kernel: Bluetooth: hci0: Controller device warning (boot_stage: 0xa0bb1047)
+Oct 22 21:14:20.851519 <HOSTNAME> kernel: Hyprland[1480]: segfault at 0 ip 00007fb18b5785e1 sp 00007ffeed073530 error 4 in libaquamarine.so.0.15.1[bc5e1,7fb18b4e7000+e3000] likely on CPU 3 (core 12, socket 0)
+Oct 22 21:14:20.851612 <HOSTNAME> kernel: Code: c0 83 00 01 ff 15 8f 7c 09 00 48 8b 45 c0 48 85 c0 74 06 83 28 01 74 41 90 48 83 c3 10 49 39 dd 74 17 48 8b 03 48 85 c0 75 97 <48> 8b 04 25 00 00 00 00 0f 0b 0f 1f 44 00 00 4c 8b 65 f0 48 8b 45
+Oct 22 21:14:21.430600 <HOSTNAME> kernel: wlp0s20f3: deauthenticating from <MAC> by local choice (Reason: 3=DEAUTH_LEAVING)

@@ -1,0 +1,50 @@
+# Reference: hardware and link status
+# Sanitized: hostname, UUIDs, MAC addresses and serial numbers removed.
+
+## System
+Framework Laptop 13 Pro (Intel Core Ultra Series 3), BIOS 03.02 (05/26/2026)
+Kernel:          7.2.8-9-omarchy
+NVIDIA driver:   615.78.08, nvidia-open-dkms (open kernel modules)
+Compositor:      Hyprland / Aquamarine, started via uwsm
+
+## Thunderbolt / USB4
+Host router:     Intel Gen16, USB4 (generation 4)
+Host ports:      four USB4 root ports, 0000:00:07.0 - 0000:00:07.3 (#21-#24)
+Enclosure:       Intel TBT5, JHL9480 "Barlow Ridge Hub 80G" (8086:5786), NVM 64.81
+Retimer:         NVM 28.82
+USB4 link:       40 Gb/s = 2 lanes * 20 Gb/s
+
+## PCIe
+GPU:             0000:2e:00.0  [10de:2c05]  RTX 5070 Ti
+GPU audio:       0000:2e:00.1  [10de:22e9]
+GPU link:        Gen4 x4 (16 GT/s x4)
+Tunnel port:     0000:00:07.1  (Root Port #22)
+Tunnel link:     2.5 GT/s x4  (Gen1 x4)
+
+kernel:
+  pci 0000:2e:00.0: 8.000 Gb/s available PCIe bandwidth, limited by
+    2.5 GT/s PCIe x4 link at 0000:00:07.1
+    (capable of 504.112 Gb/s with 32.0 GT/s PCIe x16 link)
+
+## Working configuration
+Kernel command line:
+  thunderbolt.host_reset=false pcie_aspm=off pcie_port_pm=off
+  pcie_ports=native thunderbolt.clx=0
+
+modprobe:
+  options nvidia_drm modeset=1
+  options nvidia NVreg_DynamicPowerManagement=0x00 \
+                   NVreg_EnableS0ixPowerManagement=0 \
+                   NVreg_EnableResizableBar=0
+
+systemd:
+  nvidia-egpu-lockclocks.service   pins the graphics clock (no P8 -> P0 transition)
+  egpu-crash-log.service           mirrors dmesg to /var/log/egpu-crash.log
+
+udev:
+  99-egpu-power.rules     power/control=on for 10de:2c05, 10de:22e9, 8086:5786
+  98-egpu-lockclocks.rules  starts the pin service when the GPU appears
+
+## Boot comparison
+with clock pin:     20:54:20 -> 21:14:21   (20 min)  no Xid
+without clock pin:  21:14:51 -> 21:15:38   (26 s)    Xid 79 + AER
