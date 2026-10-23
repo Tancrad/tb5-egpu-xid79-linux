@@ -371,6 +371,45 @@ tail -60 /var/log/egpu-crash.log
 
 ---
 
+## If it crashes again
+
+In order:
+
+1. **Check the pin is actually applied.**
+
+   ```bash
+   nvidia-smi --query-gpu=clocks.gr,power.draw --format=csv
+   ```
+
+   `195 MHz` means the pin is not active — that is the failure state.
+   `~2900 MHz` means it is. At 195 MHz the next frame the compositor sends to
+   the GPU is likely to kill it.
+
+2. **Check whether the GPU was attached after login.** If so, the clocks are
+   pinned but the compositor has no outputs for it; restart the session.
+
+3. **Read the crash.**
+
+   ```bash
+   journalctl -b -1 -k | grep -E 'Xid|fallen off|AER'
+   tail -60 /var/log/egpu-crash.log
+   ```
+
+4. **If the pin was applied and it still crashed**, the workaround has stopped
+   working. Move to the open leads below.
+
+## Open leads (untested)
+
+- **GSP firmware.** Several eGPU reports say the *proprietary* driver with
+  `options nvidia NVreg_EnableGpuFirmware=0` is stable where the open modules
+  are not, and that the open modules ignore the option. This machine runs
+  `nvidia-open-dkms`, so it cannot use it as-is. Worth testing if the clock pin
+  stops working — and it would also restore boost clocks.
+- **Kernel bugzilla 221319** — TB5 peripherals on USB4 hosts, GSP-related
+  reboots.
+- **Enclosure NVM update** for the TB4 fallback path. Would not fix the crash
+  (the Gen1 tunnel is present in working boots) but may recover bandwidth.
+
 ## Caveats
 
 - **n = 1.** One laptop, one enclosure, one driver version. Treat it as a
