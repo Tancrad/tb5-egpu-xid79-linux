@@ -177,6 +177,7 @@ The A/B result on this machine:
 |---|---|---|---|
 | 20:54 → 21:14 | yes | 20 min | stable, three external monitors, settings changes |
 | 21:14 → 21:15 | no | 26 s | Xid 79 on first mouse movement |
+| 21:28 → 22:09 | yes | 41 min | stable; HDMI settings changed, display orientation adjusted, three outputs |
 
 The clock stays fixed at ~2910 MHz and the GPU draws ~43 W at idle instead of
 ~10 W. That is the trade.
